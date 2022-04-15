@@ -44,6 +44,23 @@ function toolbar_button(button_sprite=spr_toolbar_button,button_text="", button_
 	return(button);
 }
 
+//update dynamic things with buttons
+function toolbar_update_button(_button){
+	switch(_button.button._execute){
+		default: break;	
+		
+		case (button_toggle_optifine):{
+			
+			if (global.settings_optifine_enabled){
+				_button.button._text = "Optifine [ON]";
+			}else{
+				_button.button._text = "Optifine [OFF]";
+			}
+		}break;
+		
+	}
+}
+
 
 function toolbar_check_activated(_button){
 	if (instance_exists(obj_par_disable_toolbar_buttons)) exit;

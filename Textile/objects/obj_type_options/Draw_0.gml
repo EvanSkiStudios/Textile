@@ -18,8 +18,16 @@ draw_roundrect_color_ext(
 	true
 );
 
+if (is_optifine_option){
+	if !(global.settings_optifine_enabled){
+		shader_set(shd_greyscale);		
+	}
+}
+
 //draw icon
 draw_sprite_ext(icon, icon_index, x,y, 1, 1, 0, c_white, 1);
+
+shader_reset();
 
 //draw icon border
 icon_width = (sprite_get_width(icon));

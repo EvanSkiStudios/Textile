@@ -1,4 +1,4 @@
-enabled = false;
+option_enabled = false;
 is_conflicted = false;
 
 background_color_normal = c_black;
