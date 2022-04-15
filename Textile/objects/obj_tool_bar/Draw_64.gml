@@ -14,5 +14,6 @@ draw_sprite_stretched(
 
 
 //draw_buttons
-toolbar_button_draw(first_button);
-toolbar_button_draw(sec_button);
+toolbar_button_draw(button_help);
+toolbar_button_draw(button_preset_S);
+toolbar_button_draw(button_preset_L);

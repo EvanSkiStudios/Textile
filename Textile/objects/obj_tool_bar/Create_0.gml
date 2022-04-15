@@ -1,15 +1,19 @@
 display_width = display_get_gui_width();
 toolbar_height = 25;
 
+mouse_alarm_reset_speed = (GAMESPEED / 8);
+alarm[0] = mouse_alarm_reset_speed;
+
+
 global.toolbar_buttons = 0;
-function toolbar_button(button_text="", button_execute) constructor{
+function toolbar_button(button_sprite=spr_toolbar_button,button_text="", button_execute) constructor{
 	
 	//set button num
 	var _button_num = global.toolbar_buttons;
 	
 	var button_base_x = 5;
 	var button_base_y = 3;
-	var button_base_w = 80;
+	var button_base_w = 99;
 	var button_base_h = 20;
 	
 	var button_seperator = 20;
@@ -32,6 +36,7 @@ function toolbar_button(button_text="", button_execute) constructor{
 		_y : button_base_y,
 		_w : button_base_w,
 		_h : button_base_h,
+		_sprite : button_sprite,
 		_text : button_text,
 		_execute : button_execute
 	}
@@ -40,31 +45,66 @@ function toolbar_button(button_text="", button_execute) constructor{
 }
 
 
+function toolbar_check_activated(_button){
+	if (instance_exists(obj_par_disable_toolbar_buttons)) exit;
+	
+	//get if mouse is over button and react accordingly
+	xx = _button.button._x; 
+	yy = _button.button._y;
+	ww = _button.button._w;
+	hh = _button.button._h;
+	_script = _button.button._execute;
+	
+	var _mouse_x = device_mouse_x(0);
+	var _mouse_y = device_mouse_y(0);
+	
+	if (point_in_rectangle( _mouse_x, _mouse_y, xx, yy, (ww+xx), (hh+yy))){
+		
+		_button.button._sprite = spr_toolbar_button_act;
+		if (window_get_cursor() != cr_handpoint) window_set_cursor(cr_handpoint);
+		
+		//if mouse is on button and has been clicked, run its script
+		if (mouse_check_button_released(mb_left)){
+			script_execute(_script);
+		}
+		
+	}else{
+		if (_button.button._sprite != spr_toolbar_button) _button.button._sprite = spr_toolbar_button;
+	}
+	
+}
+
 function toolbar_button_draw(_button){
+	if (instance_exists(obj_par_disable_toolbar_buttons)) exit;
+	
 	//get value from struct from the funtion that made the button
 	xx = _button.button._x; 
 	yy = _button.button._y;
 	ww = _button.button._w;
 	hh = _button.button._h;
+	spr = _button.button._sprite;
 	text = _button.button._text;
 	
 	//draw button
-	draw_sprite_stretched(spr_toolbar_button,0, xx,yy,ww,hh);
+	draw_sprite_stretched(spr,0, xx,yy,ww,hh);
 	
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_set_font(fnt_toolbar);
+	
 	draw_text(
 		xx + (ww/2), 
 		yy + (hh/2),
 		text
 	);
+	
 	draw_set_font(-1);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 }
 
 
-//button
-first_button = new toolbar_button("Help",button_def_no_script);
-sec_button = new toolbar_button("Preset",button_def_no_script);
+//Create buttons
+button_help = new toolbar_button(,"About",button_help_message);
+button_preset_S = new toolbar_button(,"Save Preset",button_preset_save);
+button_preset_L = new toolbar_button(,"Load Preset",button_preset_load);

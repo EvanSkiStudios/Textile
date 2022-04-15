@@ -1,0 +1,3 @@
+toolbar_check_activated(button_help);
+toolbar_check_activated(button_preset_S);
+toolbar_check_activated(button_preset_L);

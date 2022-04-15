@@ -1,0 +1,9 @@
+draw_set_alpha(0.4);
+draw_roundrect_color_ext(
+	60,60,
+	180,200,
+	20,20,
+	c_black,c_black,
+	false
+);
+draw_set_alpha(1);
