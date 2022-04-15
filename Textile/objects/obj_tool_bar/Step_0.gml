@@ -1,4 +1,6 @@
 toolbar_check_activated(button_help);
 toolbar_check_activated(button_preset_S);
 toolbar_check_activated(button_preset_L);
+toolbar_check_activated(button_optifine_toggle);
+toolbar_check_activated(button_optifine_download);
 toolbar_check_activated(button_create_RP);

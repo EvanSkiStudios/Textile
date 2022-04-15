@@ -1,4 +1,4 @@
-draw_set_alpha(0.4);
+draw_set_alpha(0.6);
 draw_roundrect_color_ext(
 	60,60,
 	180,200,

@@ -13,7 +13,7 @@ function toolbar_button(button_sprite=spr_toolbar_button,button_text="", button_
 	
 	var button_base_x = 5;
 	var button_base_y = 3;
-	var button_base_w = 99;
+	var button_base_w = 136;
 	var button_base_h = 20;
 	
 	var button_seperator = 20;
@@ -58,7 +58,7 @@ function toolbar_check_activated(_button){
 	var _mouse_x = device_mouse_x(0);
 	var _mouse_y = device_mouse_y(0);
 	
-	if (point_in_rectangle( _mouse_x, _mouse_y, xx, yy, (ww+xx), (hh+yy))){
+	if (point_in_rectangle( _mouse_x, _mouse_y, xx, yy + global.camera_y_pos, (ww+xx), (hh+yy) + global.camera_y_pos )){
 		
 		_button.button._sprite = spr_toolbar_button_act;
 		if (window_get_cursor() != cr_handpoint) window_set_cursor(cr_handpoint);
@@ -105,7 +105,9 @@ function toolbar_button_draw(_button){
 
 
 //Create buttons
-button_help = new toolbar_button(,"About",button_help_message);
-button_preset_S = new toolbar_button(,"Save Preset",button_preset_save);
-button_preset_L = new toolbar_button(,"Load Preset",button_preset_load);
-button_create_RP = new toolbar_button(,"Create Pack",button_create_resourcepack);
+button_help =				new toolbar_button(, "About",				button_help_message);
+button_preset_S =			new toolbar_button(, "Save Preset",			button_preset_save);
+button_preset_L =			new toolbar_button(, "Load Preset",			button_preset_load);
+button_optifine_toggle =	new toolbar_button(, "Toggle Optifine",		button_toggle_optifine);
+button_optifine_download =	new toolbar_button(, "Download Optifine",	button_download_optifine);
+button_create_RP =			new toolbar_button(, "Build Pack",			button_create_resourcepack);
