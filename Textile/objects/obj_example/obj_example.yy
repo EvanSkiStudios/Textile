@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "FileManager",
-    "path": "folders/Objects/FileManager.yy",
+    "path": "folders/File Manager/Objects/FileManager.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_example",

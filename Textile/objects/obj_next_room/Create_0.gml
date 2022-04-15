@@ -1,0 +1,1 @@
+alarm[0] = (GAMESPEED / 10) * 1;

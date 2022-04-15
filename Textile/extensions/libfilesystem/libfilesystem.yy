@@ -493,7 +493,7 @@
   "tvosCocoaPodDependencies": "",
   "parent": {
     "name": "Extensions",
-    "path": "folders/Extensions.yy",
+    "path": "folders/File Manager/Extensions.yy",
   },
   "resourceVersion": "1.2",
   "name": "libfilesystem",
