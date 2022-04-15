@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/glow_item_frame"
+  },
+  "overrides": [
+  		{ "predicate": {"custom_model_data":7777}, "model": "item/custom_block/chaos_forge"}
+ ]
+}
