@@ -108,3 +108,4 @@ function toolbar_button_draw(_button){
 button_help = new toolbar_button(,"About",button_help_message);
 button_preset_S = new toolbar_button(,"Save Preset",button_preset_save);
 button_preset_L = new toolbar_button(,"Load Preset",button_preset_load);
+button_create_RP = new toolbar_button(,"Create Pack",button_create_resourcepack);

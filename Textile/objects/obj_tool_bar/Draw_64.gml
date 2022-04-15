@@ -17,3 +17,4 @@ draw_sprite_stretched(
 toolbar_button_draw(button_help);
 toolbar_button_draw(button_preset_S);
 toolbar_button_draw(button_preset_L);
+toolbar_button_draw(button_create_RP);

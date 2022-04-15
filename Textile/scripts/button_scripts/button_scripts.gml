@@ -14,3 +14,7 @@ function button_preset_save(){
 function button_preset_load(){
 	show_debug_message("preset_load here");
 }
+
+function button_create_resourcepack(){
+	show_debug_message("Create rP here");	
+}
