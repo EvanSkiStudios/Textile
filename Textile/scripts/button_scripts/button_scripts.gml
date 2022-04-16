@@ -44,5 +44,11 @@ function button_download_optifine(){
 }
 
 function button_create_resourcepack(){
-	show_debug_message("Create rP here");	
+	
+	if !(directory_exists(game_save_id + "Evanskis Chaos Pack\\")){
+		directory_create(game_save_id + "Evanskis Chaos Pack\\");	
+	}
+	
+	var test = directory_copy(working_directory+"Resources\\_Base", game_save_id + "Evanski Chaos Pack\\");
+	show_message(test);
 }
