@@ -16,7 +16,7 @@
   "androidProps": false,
   "installdir": "",
   "files": [
-    {"filename":"libfilesystem.dll","origname":"extensions\\libfilesystem.dll","init":"","final":"","kind":1,"uncompress":false,"functions":[
+    {"filename":"libfilesystem_x64.dll","origname":"extensions\\libfilesystem.dll","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"file_copy","kind":12,"help":"file_copy(fname,newname)","hidden":false,"returnType":2,"argCount":2,"args":[
             1,
             1,

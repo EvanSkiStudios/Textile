@@ -45,10 +45,20 @@ function button_download_optifine(){
 
 function button_create_resourcepack(){
 	
-	if !(directory_exists(game_save_id + "Evanskis Chaos Pack\\")){
-		directory_create(game_save_id + "Evanskis Chaos Pack\\");	
+	var test = better_directory_copy(working_directory+"Resources\\_Base", game_save_id + "Evanskis Chaos Pack\\");
+	show_message(test);
+	
+
+/* alternitive? unproven if causes other errors / blows up on others pcs
+	if !(directory_exists("C:\\Users\\Evan\\Documents\\My Games\\" + "test\\")){
+		directory_create("C:\\Users\\Evan\\Documents\\My Games\\" + "test\\");	
 	}
 	
-	var test = directory_copy(working_directory+"Resources\\_Base", game_save_id + "Evanski Chaos Pack\\");
+	var old_working_dir = working_directory;
+	
+	var te = directory_set_current_working(game_save_id); show_message(te);
+	
+	var test = directory_copy(old_working_dir+"Resources\\_Base", game_save_id + "Evanskis Chaos Pack\\");
 	show_message(test);
+	*/
 }
