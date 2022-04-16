@@ -1,0 +1,17 @@
+{ 
+	"custom.player.no": { 
+		"category": "player", "sounds": [ "custom/player/no" ] 
+	},
+	"custom.player.llama": { 
+		"category": "player", "sounds": [ "custom/player/llama" ] 
+	},
+	"custom.crafting.tacticaldirt_merc": { 
+		"category": "player", "sounds": [ "custom/crafting/tacticaldirt_merc" ] 
+	},
+	"custom.crafting.tacticaldirt_evan": { 
+		"category": "player", "sounds": [ "custom/crafting/tacticaldirt_evan" ] 
+	},
+	"custom.advancement.sneak_100": { 
+		"category": "player", "sounds": [ "custom/advancement/sneak_100" ] 
+	} 	
+}

@@ -1,0 +1,27 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "block/infested/infested_stone",
+		"north": "block/infested/infested_stone",
+		"east": "block/infested/infested_stone",
+		"south": "block/infested/infested_stone",
+		"west": "block/infested/infested_stone",
+		"up": "block/infested/infested_stone",
+		"down": "block/infested/infested_stone"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#north", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#east", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#south", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#west", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#up", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#down", "cullface": "down"}
+			}
+		}
+	]
+}

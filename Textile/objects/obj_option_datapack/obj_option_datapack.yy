@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "options",
-    "path": "folders/GUI/options.yy",
+    "path": "folders/GUI/options/options.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_option_datapack",

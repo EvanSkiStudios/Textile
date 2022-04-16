@@ -45,13 +45,22 @@ function button_download_optifine(){
 
 function button_create_resourcepack(){
 	
+	export_location = (game_save_id + "Evanskis Chaos Pack\\");
+	export_location_ext = (export_location+"assets\\minecraft\\");
+	
 	//get rid of old export if one exists
-	if (directory_exists(game_save_id + "Evanskis Chaos Pack\\")){
-		directory_destroy(game_save_id + "Evanskis Chaos Pack\\");	
+	if (directory_exists(export_location)){
+		directory_destroy(export_location);	
 	}
 	
-	var test = better_directory_copy(working_directory+"Resources\\_Base", game_save_id + "Evanskis Chaos Pack\\");
-	show_message(test);
+	//Add base
+	var test = better_directory_copy(working_directory+"Resources\\_Base", export_location);
+	
+	better_directory_copy(working_directory+"Resources\\_Optifine options\\datapack\\", export_location_ext);
+	
+	
+	//Finish
+	show_message("Pack created at:\n"+string(export_location));
 	
 
 /* alternitive? unproven if causes other errors / blows up on others pcs

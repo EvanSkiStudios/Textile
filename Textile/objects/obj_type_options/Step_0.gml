@@ -43,5 +43,5 @@ option = {
 	name : option_text_string,
 	is_enabled : option_enabled,
 	conflicted : is_conflicted,
-	files : ["Resources\\datapack"]
+	files : files_array
 };

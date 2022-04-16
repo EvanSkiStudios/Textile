@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "icons",
-    "path": "folders/GUI/options/icons.yy",
+    "name": "optifine options",
+    "path": "folders/GUI/options/icons/optifine options.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_datapack",
