@@ -45,6 +45,11 @@ function button_download_optifine(){
 
 function button_create_resourcepack(){
 	
+	//get rid of old export if one exists
+	if (directory_exists(game_save_id + "Evanskis Chaos Pack\\")){
+		directory_destroy(game_save_id + "Evanskis Chaos Pack\\");	
+	}
+	
 	var test = better_directory_copy(working_directory+"Resources\\_Base", game_save_id + "Evanskis Chaos Pack\\");
 	show_message(test);
 	
