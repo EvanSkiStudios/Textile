@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_bigsmoke",
-    "path": "sprites/spr_bigsmoke/spr_bigsmoke.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -26,11 +23,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "sounds",
-    "path": "folders/GUI/options/options/sounds.yy",
+    "name": "options",
+    "path": "folders/GUI/options.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_option_bigsmoke",
+  "name": "obj_option_controller",
   "tags": [],
   "resourceType": "GMObject",
 }

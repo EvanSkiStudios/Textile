@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bigsmoke",
-    "path": "sprites/spr_bigsmoke/spr_bigsmoke.yy",
+    "name": "spr_steve_boats",
+    "path": "sprites/spr_steve_boats/spr_steve_boats.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,11 +26,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "sounds",
-    "path": "folders/GUI/options/options/sounds.yy",
+    "name": "optifine options",
+    "path": "folders/GUI/options/options/optifine options.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_option_bigsmoke",
+  "name": "obj_option_steve_boats",
   "tags": [],
   "resourceType": "GMObject",
 }

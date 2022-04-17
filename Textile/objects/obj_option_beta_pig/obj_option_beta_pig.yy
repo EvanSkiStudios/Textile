@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bigsmoke",
-    "path": "sprites/spr_bigsmoke/spr_bigsmoke.yy",
+    "name": "spr_beta_pigs",
+    "path": "sprites/spr_beta_pigs/spr_beta_pigs.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,11 +26,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "sounds",
-    "path": "folders/GUI/options/options/sounds.yy",
+    "name": "mobs",
+    "path": "folders/GUI/options/options/optifine options/mobs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_option_bigsmoke",
+  "name": "obj_option_beta_pig",
   "tags": [],
   "resourceType": "GMObject",
 }

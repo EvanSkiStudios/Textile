@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bigsmoke",
-    "path": "sprites/spr_bigsmoke/spr_bigsmoke.yy",
+    "name": "spr_mc_armory",
+    "path": "sprites/spr_mc_armory/spr_mc_armory.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,11 +26,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "sounds",
-    "path": "folders/GUI/options/options/sounds.yy",
+    "name": "optifine options",
+    "path": "folders/GUI/options/options/optifine options.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_option_bigsmoke",
+  "name": "obj_option_mcarmor",
   "tags": [],
   "resourceType": "GMObject",
 }

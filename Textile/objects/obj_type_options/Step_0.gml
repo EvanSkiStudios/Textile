@@ -48,11 +48,3 @@ if (option_enabled){
 		background_color_active = background_color_conflict;		
 	}
 }
-
-//option struct data
-option = {
-	name : option_text_string,
-	is_enabled : option_enabled,
-	conflicted : is_conflicted,
-	files : files_array
-};
