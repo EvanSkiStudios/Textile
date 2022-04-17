@@ -1,5 +1,10 @@
 option_enabled = false;
 is_conflicted = false;
+is_optifine_option = false;
+is_sound = false;
+
+//snd = audio_create_stream("Music/Track1.ogg");
+
 
 background_color_normal = c_black;
 background_color_enabled = $727272;
