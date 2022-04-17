@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6737091b-8db4-41b4-b31c-75e92b2f09ea","path":"sprites/spr_datapack/spr_datapack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6737091b-8db4-41b4-b31c-75e92b2f09ea","path":"sprites/spr_datapack/spr_datapack.yy",},"LayerId":{"name":"ddee8bbf-b9de-421c-9a21-e5cf5790ea6b","path":"sprites/spr_datapack/spr_datapack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_datapack","path":"sprites/spr_datapack/spr_datapack.yy",},"resourceVersion":"1.0","name":"6737091b-8db4-41b4-b31c-75e92b2f09ea","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"44d815d6-2ab2-45e2-a1f4-a0dbd6fd2249","path":"sprites/spr_evanski_ghast/spr_evanski_ghast.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"44d815d6-2ab2-45e2-a1f4-a0dbd6fd2249","path":"sprites/spr_evanski_ghast/spr_evanski_ghast.yy",},"LayerId":{"name":"ed01405e-3013-41e1-932d-501e9eea02a7","path":"sprites/spr_evanski_ghast/spr_evanski_ghast.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_evanski_ghast","path":"sprites/spr_evanski_ghast/spr_evanski_ghast.yy",},"resourceVersion":"1.0","name":"44d815d6-2ab2-45e2-a1f4-a0dbd6fd2249","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_datapack","path":"sprites/spr_datapack/spr_datapack.yy",},
+    "spriteId": {"name":"spr_evanski_ghast","path":"sprites/spr_evanski_ghast/spr_evanski_ghast.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3baf686c-e2fb-4747-9520-ae71d0bf9a5b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6737091b-8db4-41b4-b31c-75e92b2f09ea","path":"sprites/spr_datapack/spr_datapack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"93c54d64-788a-4eb7-bc4b-effdb462c805","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"44d815d6-2ab2-45e2-a1f4-a0dbd6fd2249","path":"sprites/spr_evanski_ghast/spr_evanski_ghast.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_datapack","path":"sprites/spr_datapack/spr_datapack.yy",},
+    "parent": {"name":"spr_evanski_ghast","path":"sprites/spr_evanski_ghast/spr_evanski_ghast.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_datapack",
+    "name": "spr_evanski_ghast",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ddee8bbf-b9de-421c-9a21-e5cf5790ea6b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ed01405e-3013-41e1-932d-501e9eea02a7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "icons",
-    "path": "folders/GUI/options/icons.yy",
+    "name": "mobs",
+    "path": "folders/GUI/options/icons/optifine options/mobs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_datapack",
+  "name": "spr_evanski_ghast",
   "tags": [],
   "resourceType": "GMSprite",
 }

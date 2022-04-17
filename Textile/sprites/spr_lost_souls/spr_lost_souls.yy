@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6737091b-8db4-41b4-b31c-75e92b2f09ea","path":"sprites/spr_datapack/spr_datapack.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6737091b-8db4-41b4-b31c-75e92b2f09ea","path":"sprites/spr_datapack/spr_datapack.yy",},"LayerId":{"name":"ddee8bbf-b9de-421c-9a21-e5cf5790ea6b","path":"sprites/spr_datapack/spr_datapack.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_datapack","path":"sprites/spr_datapack/spr_datapack.yy",},"resourceVersion":"1.0","name":"6737091b-8db4-41b4-b31c-75e92b2f09ea","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cf57a24b-b77f-408b-8b55-38dfe6a856f7","path":"sprites/spr_lost_souls/spr_lost_souls.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cf57a24b-b77f-408b-8b55-38dfe6a856f7","path":"sprites/spr_lost_souls/spr_lost_souls.yy",},"LayerId":{"name":"6787d2e7-b4a8-4a6a-92ad-d73cc58457a9","path":"sprites/spr_lost_souls/spr_lost_souls.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_lost_souls","path":"sprites/spr_lost_souls/spr_lost_souls.yy",},"resourceVersion":"1.0","name":"cf57a24b-b77f-408b-8b55-38dfe6a856f7","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_datapack","path":"sprites/spr_datapack/spr_datapack.yy",},
+    "spriteId": {"name":"spr_lost_souls","path":"sprites/spr_lost_souls/spr_lost_souls.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3baf686c-e2fb-4747-9520-ae71d0bf9a5b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6737091b-8db4-41b4-b31c-75e92b2f09ea","path":"sprites/spr_datapack/spr_datapack.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"85914789-1222-4dbf-a952-1928f556aa95","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cf57a24b-b77f-408b-8b55-38dfe6a856f7","path":"sprites/spr_lost_souls/spr_lost_souls.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_datapack","path":"sprites/spr_datapack/spr_datapack.yy",},
+    "parent": {"name":"spr_lost_souls","path":"sprites/spr_lost_souls/spr_lost_souls.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_datapack",
+    "name": "spr_lost_souls",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ddee8bbf-b9de-421c-9a21-e5cf5790ea6b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6787d2e7-b4a8-4a6a-92ad-d73cc58457a9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "icons",
-    "path": "folders/GUI/options/icons.yy",
+    "name": "mobs",
+    "path": "folders/GUI/options/icons/optifine options/mobs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_datapack",
+  "name": "spr_lost_souls",
   "tags": [],
   "resourceType": "GMSprite",
 }

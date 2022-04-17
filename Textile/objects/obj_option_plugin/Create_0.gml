@@ -6,5 +6,5 @@ is_optifine_option = true;
 icon = sprite_index;
 icon_index = image_index;
 
-option_text_string = "DataPack Assets";
-files_array = ["_Optifine options\\datapack\\"];
+option_text_string = "Plugin Assets";
+files_array = ["_plugin\\"];

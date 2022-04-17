@@ -53,10 +53,13 @@ function button_create_resourcepack(){
 		directory_destroy(export_location);	
 	}
 	
-	//Add base
-	var test = better_directory_copy(working_directory+"Resources\\_Base", export_location);
+	resource_dir = (working_directory+"Resources\\");
 	
-	better_directory_copy(working_directory+"Resources\\_Optifine options\\datapack\\", export_location_ext);
+	//Add base
+	better_directory_copy(resource_dir+"_Base", export_location);
+	
+	//test
+	better_directory_copy(resource_dir+"_Optifine options\\datapack\\", export_location_ext);
 	
 	
 	//Finish
