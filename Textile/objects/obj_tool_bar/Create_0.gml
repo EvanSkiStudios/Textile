@@ -1,7 +1,7 @@
 display_width = display_get_gui_width();
 toolbar_height = 25;
 
-mouse_alarm_reset_speed = (GAMESPEED / 8);
+mouse_alarm_reset_speed = (GAMESPEED / 16);
 alarm[0] = mouse_alarm_reset_speed;
 
 

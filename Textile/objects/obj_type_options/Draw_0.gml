@@ -37,8 +37,8 @@ draw_set_color($727272);
 draw_rectangle(
 	(x - (icon_width/2)),
 	(y - (icon_height/2)),
-	(x + (icon_width/2)),
-	(y + (icon_height/2)),
+	(x + (icon_width/2) - 1),
+	(y + (icon_height/2) - 1),
 	true
 );
 draw_set_color(c_black);

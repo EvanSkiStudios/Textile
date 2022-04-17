@@ -20,20 +20,6 @@ function create_option(_index,_name,_icon,_files,_optifine=false,_sound=false,_s
 	return(option);
 }
 
-//set array
-var i = 0;
-global.options_array[i] =	create_option(i,"Datapack Assets",spr_datapack,["_datapack\\"],true);
-global.options_array[++i] = create_option(i,"Plugin Assets",spr_plugin_assets,["_plugin\\"],true);
-global.options_array[++i] = create_option(i,"Optifine Colors"+"\n"+"Helper",spr_opt_color_helper,["_Optifine options\\optifine colors helper\\"],true);
-global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-
 
 //create objects
 var base_x = 96; var base_y = 128; var _depth = layer_get_depth(layer_get_id("Instances"));
