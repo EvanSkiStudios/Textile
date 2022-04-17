@@ -14,9 +14,11 @@ if (point_in_rectangle( _mouse_x, _mouse_y, x - 80, y - 60, x + 80, y + 130 )){
 				show_message("This option is disabled due to the Optifine setting being set to off!");
 			}else{
 				option_enabled = !option_enabled;
+				event_user(0);
 			}
 		}else{
 			option_enabled = !option_enabled;
+			event_user(0);
 			
 			if (option_enabled){
 				//play sound option
@@ -35,6 +37,7 @@ if (point_in_rectangle( _mouse_x, _mouse_y, x - 80, y - 60, x + 80, y + 130 )){
 if (is_optifine_option){
 	if !(global.settings_optifine_enabled){
 		option_enabled = false;
+		event_user(0);
 	}
 }
 
@@ -42,7 +45,7 @@ if (is_optifine_option){
 if (option_enabled){
 	background_color_active = background_color_enabled;	
 }else{
-	if !(is_conflicted){
+	if !(option_is_conflicted){
 		background_color_active = background_color_normal;	
 	}else{
 		background_color_active = background_color_conflict;		

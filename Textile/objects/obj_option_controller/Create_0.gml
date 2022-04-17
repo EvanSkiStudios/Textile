@@ -1,6 +1,7 @@
-function create_option(_name,_icon,_files,_optifine=false,_sound=false,_sound_file=""){
+function create_option(_index,_name,_icon,_files,_optifine=false,_sound=false,_sound_file=""){
 	//option struct data
 	option = {
+		index : _index,
 		icon : _icon,
 		str_name : _name,
 		files : _files,
@@ -21,17 +22,17 @@ function create_option(_name,_icon,_files,_optifine=false,_sound=false,_sound_fi
 
 //set array
 var i = 0;
-global.options_array[i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
-global.options_array[++i] = create_option("Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
+global.options_array[i] =	create_option(i,"Datapack Assets",spr_datapack,["_datapack\\"],true);
+global.options_array[++i] = create_option(i,"Plugin Assets",spr_plugin_assets,["_plugin\\"],true);
+global.options_array[++i] = create_option(i,"Optifine Colors"+"\n"+"Helper",spr_opt_color_helper,["_Optifine options\\optifine colors helper\\"],true);
+global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
+global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
+global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
+global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
+global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
+global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
+global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
+global.options_array[++i] = create_option(i,"Datapack Assets",spr_datapack,["_Optifine options\\datapack\\"],true);
 
 
 //create objects
@@ -57,7 +58,7 @@ for (var i = 0; i < array_len; ++i){
 		_x = base_x; shelf = 0;
 	}
 	
-	show_message("x: "+string(_x)+"\n"+("y: "+string(_y)));
+	//DEBUG: show_message("x: "+string(_x)+"\n"+("y: "+string(_y)));
 	
 	//create and fill option
 	var option_obj = instance_create_depth(_x,_y,_depth,obj_type_options);
@@ -67,15 +68,16 @@ for (var i = 0; i < array_len; ++i){
 		
 		sprite_index =			option_data.icon;
 		option_text_string =	option_data.str_name;
-		files_array =			option_data.files;
 		option_enabled =		option_data.settings.is_enabled;
-		is_conflicted =			option_data.settings.is_conflicted;
+		option_is_conflicted =	option_data.settings.is_conflicted;
 		is_optifine_option =	option_data.is_optifine;
 		is_sound =				option_data.is_sound;
 		sound_file =			option_data.sound_file;
 		
 		
 		//creation code
+		array_index = option_data.index;
+		
 		icon = sprite_index;
 		icon_index = image_index;
 		
