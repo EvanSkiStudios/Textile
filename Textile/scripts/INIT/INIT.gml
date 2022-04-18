@@ -3,9 +3,6 @@
 global.camera_y_pos = 0;
 global.settings_optifine_enabled = true;
 
-//create options array
-create_global_options_array();
-
 
 //USE THESE INSTEAD OF THE DLL ONES TO ADVOID WEIRD WINDOWS THIGNS
 function get_directory_contents(dname, pattern, includedirs, recursive) {

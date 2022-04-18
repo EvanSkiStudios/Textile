@@ -19,17 +19,6 @@ if (point_in_rectangle( _mouse_x, _mouse_y, x - 80, y - 60, x + 80, y + 130 )){
 		}else{
 			option_enabled = !option_enabled;
 			event_user(0);
-			
-			if (option_enabled){
-				//play sound option
-				if (is_sound){
-					if (audio_is_playing(snd)) audio_stop_sound(snd);
-					audio_play_sound(snd, 0, false);
-				}	
-			}else{
-				//if disabled stop sound
-				if (is_sound){ if (audio_is_playing(snd)) audio_stop_sound(snd);}
-			}
 		}
 	}
 }

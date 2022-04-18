@@ -5,7 +5,7 @@
     {"id":{"name":"spr_mc_armory","path":"sprites/spr_mc_armory/spr_mc_armory.yy",},"order":0,},
     {"id":{"name":"spr_piglin_girls","path":"sprites/spr_piglin_girls/spr_piglin_girls.yy",},"order":10,},
     {"id":{"name":"spr_opt_color_helper","path":"sprites/spr_opt_color_helper/spr_opt_color_helper.yy",},"order":2,},
-    {"id":{"name":"create_global_options_array","path":"scripts/create_global_options_array/create_global_options_array.yy",},"order":1,},
+    {"id":{"name":"Options_Array","path":"scripts/Options_Array/Options_Array.yy",},"order":1,},
     {"id":{"name":"spr_toolbar_alt","path":"sprites/spr_toolbar_alt/spr_toolbar_alt.yy",},"order":5,},
     {"id":{"name":"spr_undying","path":"sprites/spr_undying/spr_undying.yy",},"order":18,},
     {"id":{"name":"spr_bigsmoke","path":"sprites/spr_bigsmoke/spr_bigsmoke.yy",},"order":0,},
@@ -858,6 +858,8 @@
     {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/crafting furnace/textures/block","resourceVersion":"1.0","name":"furnace_front.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/crafting furnace/textures/block","resourceVersion":"1.0","name":"furnace_front_on.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/crafting furnace/textures/block","resourceVersion":"1.0","name":"furnace_side.png","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/torch/models/block","resourceVersion":"1.0","name":"template_torch.json","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/torch/models/block","resourceVersion":"1.0","name":"template_torch_wall.json","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2022.3.0.625",

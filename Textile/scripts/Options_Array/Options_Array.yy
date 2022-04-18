@@ -6,7 +6,7 @@
     "path": "Textile.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "create_global_options_array",
+  "name": "Options_Array",
   "tags": [],
   "resourceType": "GMScript",
 }

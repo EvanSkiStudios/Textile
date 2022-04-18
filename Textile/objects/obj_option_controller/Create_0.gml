@@ -1,4 +1,5 @@
-function create_option(_index,_name,_icon,_files,_optifine=false,_sound=false,_sound_file=""){
+function create_option(_index,_name,_icon,_files,_optifine=false){
+	
 	//option struct data
 	option = {
 		index : _index,
@@ -6,8 +7,6 @@ function create_option(_index,_name,_icon,_files,_optifine=false,_sound=false,_s
 		str_name : _name,
 		files : _files,
 		is_optifine : _optifine,
-		is_sound : _sound,
-		sound_file : _sound_file,
 		
 		//settings for option object
 		settings : {
@@ -20,6 +19,9 @@ function create_option(_index,_name,_icon,_files,_optifine=false,_sound=false,_s
 	return(option);
 }
 
+
+//create options array
+create_global_options_array();
 
 //create objects
 var base_x = 96; var base_y = 128; var _depth = layer_get_depth(layer_get_id("Instances"));
@@ -57,8 +59,6 @@ for (var i = 0; i < array_len; ++i){
 		option_enabled =		option_data.settings.is_enabled;
 		option_is_conflicted =	option_data.settings.is_conflicted;
 		is_optifine_option =	option_data.is_optifine;
-		is_sound =				option_data.is_sound;
-		sound_file =			option_data.sound_file;
 		
 		
 		//creation code
@@ -66,11 +66,6 @@ for (var i = 0; i < array_len; ++i){
 		
 		icon = sprite_index;
 		icon_index = image_index;
-		
-		if (is_sound){
-			//snd = audio_create_stream("Music/Track1.ogg");
-			snd = audio_create_stream(sound_file);
-		}
 	}
 	
 }
