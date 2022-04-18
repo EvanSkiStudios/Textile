@@ -1,0 +1,1 @@
+global.click_through_turnoff = false;

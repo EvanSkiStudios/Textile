@@ -2,6 +2,7 @@
 
 global.camera_y_pos = 0;
 global.settings_optifine_enabled = true;
+global.click_through_turnoff = false;
 
 
 //USE THESE INSTEAD OF THE DLL ONES TO ADVOID WEIRD WINDOWS THIGNS

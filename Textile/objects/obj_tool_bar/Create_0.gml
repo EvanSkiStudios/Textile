@@ -77,6 +77,10 @@ function toolbar_check_activated(_button){
 	
 	if (point_in_rectangle( _mouse_x, _mouse_y, xx, yy + global.camera_y_pos, (ww+xx), (hh+yy) + global.camera_y_pos )){
 		
+		//prevents accidental selection when building
+		global.click_through_turnoff = true;
+		alarm[1] = (GAMESPEED * 0.5);
+		
 		_button.button._sprite = spr_toolbar_button_act;
 		if (window_get_cursor() != cr_handpoint) window_set_cursor(cr_handpoint);
 		

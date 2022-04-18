@@ -45,6 +45,7 @@ function button_download_optifine(){
 
 function button_create_resourcepack(){
 	
+	//set file paths
 	export_location = (game_save_id + "Evanskis Chaos Pack\\");
 	export_location_ext = (game_save_id + "Evanskis Chaos Pack\\assets\\minecraft\\");
 	
@@ -58,13 +59,27 @@ function button_create_resourcepack(){
 	//Add base
 	better_directory_copy(resource_dir+"_Base", export_location);
 	
+	var array_len = array_length(global.options_array);
 	
-	//test
-	better_directory_copy(resource_dir+"_datapack\\", export_location_ext);
-	
+	for (var i = 0; i < array_len; ++i){
+		if (global.options_array[i].settings.is_enabled){
+			//sanatize option name
+			var option_name = (global.options_array[i].str_name);
+			option_name = string_replace(option_name,"\n"," ");
+			
+			//get option files path
+			var option_files = string((global.options_array[i].files[0]));
+			show_debug_message(option_files);
+			
+			//copy files
+			better_directory_copy(resource_dir+option_files, export_location_ext);
+		}
+	}
 	
 	//Finish
 	show_message("Pack created at:\n"+string(export_location));
+	show_debug_message("Pack created at:\n"+string(export_location));
+	
 	
 
 /* alternitive? unproven if causes other errors / blows up on others pcs
