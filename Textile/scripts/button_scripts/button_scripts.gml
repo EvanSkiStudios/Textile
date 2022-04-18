@@ -46,7 +46,7 @@ function button_download_optifine(){
 function button_create_resourcepack(){
 	
 	export_location = (game_save_id + "Evanskis Chaos Pack\\");
-	export_location_ext = (export_location+"assets\\minecraft\\");
+	export_location_ext = (game_save_id + "Evanskis Chaos Pack\\assets\\minecraft\\");
 	
 	//get rid of old export if one exists
 	if (directory_exists(export_location)){
@@ -58,8 +58,10 @@ function button_create_resourcepack(){
 	//Add base
 	better_directory_copy(resource_dir+"_Base", export_location);
 	
+	
+	show_message(export_location_ext)
 	//test
-	better_directory_copy(resource_dir+"_Optifine options\\datapack\\", export_location_ext);
+	better_directory_copy(resource_dir+"_datapack\\", export_location_ext);
 	
 	
 	//Finish

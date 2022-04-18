@@ -837,7 +837,6 @@
     {"CopyToMask":-1,"filePath":"datafiles/Resources/_datapack/textures/block/custom/chaos_forge","resourceVersion":"1.0","name":"top.png.mcmeta","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/_datapack/textures/misc","resourceVersion":"1.0","name":"enchanted_item_glint.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/_datapack/textures/misc","resourceVersion":"1.0","name":"enchanted_item_glint.png.mcmeta","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles/Resources/_datapack","resourceVersion":"1.0","name":"sounds.json","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/_Optifine options/mobs/zomb-me-s/sounds/mob/husk","resourceVersion":"1.0","name":"death1.ogg","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/_Optifine options/mobs/zomb-me-s/sounds/mob/husk","resourceVersion":"1.0","name":"death2.ogg","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/_Optifine options/mobs/zomb-me-s/sounds/mob/husk","resourceVersion":"1.0","name":"hurt1.ogg","resourceType":"GMIncludedFile",},
@@ -860,6 +859,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/crafting furnace/textures/block","resourceVersion":"1.0","name":"furnace_side.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/torch/models/block","resourceVersion":"1.0","name":"template_torch.json","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/torch/models/block","resourceVersion":"1.0","name":"template_torch_wall.json","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles/Resources/_datapack","resourceVersion":"1.0","name":"sounds.json","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2022.3.0.625",
