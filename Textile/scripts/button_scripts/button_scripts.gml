@@ -59,7 +59,6 @@ function button_create_resourcepack(){
 	better_directory_copy(resource_dir+"_Base", export_location);
 	
 	
-	show_message(export_location_ext)
 	//test
 	better_directory_copy(resource_dir+"_datapack\\", export_location_ext);
 	
@@ -69,10 +68,6 @@ function button_create_resourcepack(){
 	
 
 /* alternitive? unproven if causes other errors / blows up on others pcs
-	if !(directory_exists("C:\\Users\\Evan\\Documents\\My Games\\" + "test\\")){
-		directory_create("C:\\Users\\Evan\\Documents\\My Games\\" + "test\\");	
-	}
-	
 	var old_working_dir = working_directory;
 	
 	var te = directory_set_current_working(game_save_id); show_message(te);

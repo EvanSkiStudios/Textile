@@ -16,17 +16,19 @@ function get_directory_contents(dname, pattern, includedirs, recursive) {
 	return result;
 }
 
+
 function better_directory_copy(dname, newname) {
-	var better = get_directory_contents(dname, "*.*", true, true);
-	if (is_undefined(better)) show_error("ERROR GETTING DIRECTORY CONTENTS!", true);
-	
-	for (var i = 0; i < array_length(better); i++) {
-	    if (file_exists(better[i])) {
-	        file_copy(better[i], newname + "/" + string_replace(filename_dir(better[i]), dname, "") + "/" + filename_name(better[i]));
-	    } else if (symlink_exists(better[i])) {
-	        symlink_copy(better[i], newname + "/" + string_replace(filename_dir(better[i]), dname, "") + "/" + filename_name(better[i]));
-	    } else if (directory_exists(better[i])) {
-	        directory_create(newname + "/" + string_replace(filename_dir(better[i]), dname, ""));
-	    }
-	}
+    var better = get_directory_contents(dname, "*.*", true, true);
+    if (is_undefined(better)) show_error("ERROR GETTING DIRECTORY CONTENTS!", true);
+    
+    for (var i = 0; i < array_length(better); i++) {
+        if (file_exists(better[i])) {
+            file_copy(better[i], newname + "/" + string_replace(filename_path(better[i]), dname, "") + filename_name(better[i]));
+        } else if (symlink_exists(better[i])) {
+            symlink_copy(better[i], newname + "/" + string_replace(filename_path(better[i]), dname, "") + filename_name(better[i]));
+        } else if (directory_exists(better[i])) {
+            directory_create(newname + "/" + string_replace(filename_path(better[i]), dname, ""));
+        }
+    }
 }
+
