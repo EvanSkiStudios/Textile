@@ -1,3 +1,5 @@
+option_enabled = global.options_array[array_index].settings.is_enabled;
+
 var _mouse_x = device_mouse_x(0);
 var _mouse_y = device_mouse_y(0);
 

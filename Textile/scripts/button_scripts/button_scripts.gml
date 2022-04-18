@@ -8,11 +8,50 @@ function button_help_message(){
 }
 
 function button_preset_save(){
-	show_debug_message("preset_save here");
+	if (file_exists("preset.cfg")) file_delete("preset.cfg");
+	
+	var array_len = array_length(global.options_array);
+	var save_array = array_create(array_len,false);
+	
+	for (var i = 0; i < array_len; ++i){
+		if (global.options_array[i].settings.is_enabled){
+			save_array[i] = true;
+		}
+	}
+	
+	var save_struct = {
+		optifine_set : global.settings_optifine_enabled,
+		data : save_array	
+	};
+	
+	var json_string = (json_stringify(save_struct));
+	var buffer = buffer_create(string_length(json_string)+1, buffer_fixed, 1);
+	buffer_write(buffer, buffer_string, json_string);
+	buffer_save(buffer,"preset.cfg");
+	buffer_delete(buffer);
+	
+	show_message("Preset Saved in:\n"+string(game_save_id));
 }
 
 function button_preset_load(){
-	show_debug_message("preset_load here");
+	if !(file_exists(string(game_save_id)+"preset.cfg")){ show_message("No Preset file found, try saving one!"); return; }
+	
+	var save_file = buffer_load("preset.cfg");
+	var json_string = buffer_read(save_file,buffer_string);
+	buffer_delete(save_file);
+	
+	var game_struct = json_parse(json_string);
+	
+	var array_len = array_length(global.options_array);
+	
+	for (var i = 0; i < array_len; ++i){
+		var _bool = game_struct.data[i];
+		global.options_array[i].settings.is_enabled = _bool;
+	}
+	
+	if variable_struct_exists(game_struct,"optifine_set") global.settings_optifine_enabled = game_struct.optifine_set;
+	
+	show_message("Preset Loaded Successfully!");
 }
 
 function button_toggle_optifine(){

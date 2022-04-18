@@ -9,7 +9,7 @@
 # Credits
 If I have used one of your assets in this and you wish for it to be removed please message me or create and issue and I shall remove it, thanks.
 
-[Resourcepack Credits](https://github.com/EvanSkiStudios/Textile/blob/master/Lists/CREDITS.md)
+[Resourcepack Credits](https://github.com/EvanSkiStudios/Textile/blob/main/Lists/CREDITS.md)
 
 Special Thanks to [Samuel Venable](https://github.com/time-killer-games) for [libfilesystem](https://github.com/time-killer-games/libfilesystem)
 
