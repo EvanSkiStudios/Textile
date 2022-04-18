@@ -1,5 +1,7 @@
 #macro GAMESPEED game_get_speed(gamespeed_fps)
 
+global.textile_ver = 100;
+
 global.camera_y_pos = 0;
 global.settings_optifine_enabled = true;
 global.click_through_turnoff = false;

@@ -20,7 +20,8 @@ function button_preset_save(){
 	}
 	
 	var save_struct = {
-		optifine_set : global.settings_optifine_enabled,
+		textile_ver : global.textile_ver,
+		optifine_set : bool(global.settings_optifine_enabled),
 		data : save_array	
 	};
 	
@@ -42,16 +43,29 @@ function button_preset_load(){
 	
 	var game_struct = json_parse(json_string);
 	
-	var array_len = array_length(global.options_array);
+	var array_len = array_length(game_struct.data);
 	
 	for (var i = 0; i < array_len; ++i){
 		var _bool = game_struct.data[i];
-		global.options_array[i].settings.is_enabled = _bool;
+		global.options_array[i].settings.is_enabled = bool(_bool);
 	}
 	
-	if variable_struct_exists(game_struct,"optifine_set") global.settings_optifine_enabled = game_struct.optifine_set;
+	//set optifine value
+	if variable_struct_exists(game_struct,"optifine_set") global.settings_optifine_enabled = bool(game_struct.optifine_set);
 	
-	show_message("Preset Loaded Successfully!");
+	//get settings mismatch error handling
+	if variable_struct_exists(game_struct,"textile_ver"){
+		if (game_struct.textile_ver == global.textile_ver){
+			//everything is okay
+			show_message("Preset Loaded Successfully!");
+		}else{
+			//textile version doesnt match new version
+			show_message("Preset Loaded"+"\n"+"WARNING! Your preset save is from a diffrent version of textile!"+"\n"+"Your settings may not have been loaded as intended!");
+		}
+	}else{
+		//textile version info missing
+		show_message("Preset Loaded"+"\n"+"WARNING! Your preset save is from an unknown version of textile!"+"\n"+"Your settings may not have been loaded as intended!");
+	}
 }
 
 function button_toggle_optifine(){
