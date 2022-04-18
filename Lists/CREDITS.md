@@ -7,8 +7,6 @@
 
 [piglin anime girls by IdoMinecraftStuffIguess](https://www.planetminecraft.com/texture-pack/piglin-anime-girls-optifine-required/)
 
-[steve boats by ewanhowell5195](https://www.planetminecraft.com/texture-pack/stevified/)
-
 [iron golem villager -sounds](https://www.youtube.com/watch?v=yG_Y52bK6Ec)
 
 [iron golem villager texture by MagmaCube](https://www.planetminecraft.com/texture-pack/ripped-villagers-iron-golems/)

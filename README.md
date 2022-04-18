@@ -14,6 +14,11 @@ If I have used one of your assets in this and you wish for it to be removed plea
 Special Thanks to [Samuel Venable](https://github.com/time-killer-games) for [libfilesystem](https://github.com/time-killer-games/libfilesystem)
 
 # Change Log
+## Version 1.1
++Presets options are now working
+-removal of steve boats due to user request
+
+
 ## Version 1.0
 
 *Start of the app
