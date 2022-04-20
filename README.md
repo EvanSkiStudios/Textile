@@ -14,15 +14,23 @@ If I have used one of your assets in this and you wish for it to be removed plea
 Special Thanks to [Samuel Venable](https://github.com/time-killer-games) for [libfilesystem](https://github.com/time-killer-games/libfilesystem)
 
 # Change Log
+## Version 1.2
+* Now works on "x32"/x86 based systems
+* Renamed output folder to "Evanski Chaos Pack Custom"
++ Added my own made Steve Boats model
++ Added Sun, moon, and Rain options
++ Added RGB redstone lamps
+- Removal of Sans due to me forgetting where it came from
+- Removed Shotgun
+
 ## Version 1.1
-+Presets options are now working
--removal of steve boats due to user request
++ Presets options are now working
+- removal of steve boats due to user request
 
 
 ## Version 1.0
+Start of the app
+Created options for all the currently used things in the pack
 
-*Start of the app
-*Created options for all the currently used things in the pack
-
-*Has issues with conflicts between packs, so far has only been notied with entity fire patch and black fire options
-*preset buttons not yet implamented
+Has issues with conflicts between packs, so far has only been notied with entity fire patch and black fire options
+preset buttons not yet implamented

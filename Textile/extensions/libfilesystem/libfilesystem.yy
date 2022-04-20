@@ -16,7 +16,7 @@
   "androidProps": false,
   "installdir": "",
   "files": [
-    {"filename":"libfilesystem_x64.dll","origname":"extensions\\libfilesystem.dll","init":"","final":"","kind":1,"uncompress":false,"functions":[
+    {"filename":"libfilesystem.dll","origname":"extensions\\libfilesystem.dll","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"file_copy","kind":12,"help":"file_copy(fname,newname)","hidden":false,"returnType":2,"argCount":2,"args":[
             1,
             1,
@@ -457,6 +457,7 @@
       ],"constants":[],"ProxyFiles":[],"copyToTargets":194,"order":[
         {"name":"generate_working_directory","path":"extensions/libfilesystem/libfilesystem.yy",},
       ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+    {"filename":"libfilesystem.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":-1,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
   ],
   "classname": "",
   "tvosclassname": "",

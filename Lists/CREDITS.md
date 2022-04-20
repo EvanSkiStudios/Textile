@@ -22,8 +22,6 @@ creeper sounds
 https://freesound.org/people/pyro13djt/sounds/331938/ https://creativecommons.org/licenses/by/3.0/
 https://freesound.org/people/AmeAngelofSin/sounds/345049/ https://creativecommons.org/licenses/by/3.0/
 
-[shotgun by Prunesgrove](https://www.planetminecraft.com/texture-pack/pg-s-pump-action-shotgun/download/file/14613468/)
-
 [llama Traders by GentlemanRevvnar](https://www.planetminecraft.com/texture-pack/literally-wandering-llama-trader/)
 
 

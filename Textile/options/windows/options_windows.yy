@@ -1,7 +1,7 @@
 {
-  "option_windows_display_name": "Textile V.1.0 by Evanski",
+  "option_windows_display_name": "Textile V.1.2 by Evanski",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "1.0.0.0",
+  "option_windows_version": "1.2.0.0",
   "option_windows_company_info": "EvanskiStudios",
   "option_windows_product_info": "Textile",
   "option_windows_copyright_info": "EvanskiStudios",
@@ -28,7 +28,7 @@
   "option_windows_enable_steam": false,
   "option_windows_disable_sandbox": true,
   "option_windows_steam_use_alternative_launcher": false,
-  "option_windows_use_x64": true,
+  "option_windows_use_x64": false,
   "resourceVersion": "1.1",
   "name": "Windows",
   "tags": [],
