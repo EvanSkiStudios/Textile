@@ -98,6 +98,7 @@ function button_download_optifine(){
 
 function button_create_resourcepack(){
 	var finished = false;
+	var build_error = false;
 	
 	//do a while loop, because gms is single threaded so we lock the thread to only process the file transfers in the dll
 	while(!finished){
@@ -122,7 +123,19 @@ function button_create_resourcepack(){
 				//sanatize option name
 				var option_name = (global.options_array[i].str_name);
 				option_name = string_replace(option_name,"\n"," ");
-			
+				
+				//check conflicts
+				if (global.options_array[i].settings.is_conflicted == true){
+					show_message(
+					"Warning! There are Conflicting Options\n"+
+					option_name + " | " + global.options_array[i].conflicts[0]+
+					"\n"+
+					"Building will not continue until these are solved!"
+					);
+					build_error = true;
+					break;
+				}
+				
 				//get option files path
 				var option_files = string((global.options_array[i].files[0]));
 				show_debug_message(option_files);
@@ -135,6 +148,8 @@ function button_create_resourcepack(){
 		//turns off the while loop to unlock the thread and allow us to continue
 		finished = true;
 	}
+	
+	if (build_error) return(-1); //their is an error
 	
 	//Finish
 	show_message("Pack created at:\n"+string(export_location));

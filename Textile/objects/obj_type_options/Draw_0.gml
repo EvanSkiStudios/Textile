@@ -49,5 +49,13 @@ draw_set_color(c_white);
 
 draw_text(x, (y + (icon_height/2) + 10), option_text_string);
 
+if (option_is_conflicted){
+	draw_set_font(fnt_conflict);
+	
+	draw_text(x, (y + (icon_height/2) + 50), "Conflicted with\n"+(global.options_array[array_index].conflicts[0]));	
+	
+	draw_set_font(-1);
+}
+
 draw_set_color(c_black);
 draw_set_halign(fa_left);

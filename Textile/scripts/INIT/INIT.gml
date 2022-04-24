@@ -1,10 +1,40 @@
 #macro GAMESPEED game_get_speed(gamespeed_fps)
 
+
 global.textile_ver = 120;
 
 global.camera_y_pos = 0;
 global.settings_optifine_enabled = true;
 global.click_through_turnoff = false;
+
+global.options_index = ds_list_create();
+
+//for type options
+function check_conflicts(){
+	if (option_enabled){
+		if (array_length((global.options_array[array_index].conflicts)) > 0){
+			var conflictor = global.options_array[array_index].conflicts[0];
+			var option = ds_list_find_index(global.options_index, conflictor);
+			if (global.options_array[option].settings.is_enabled){
+				option_is_conflicted = true;
+				global.options_array[option].settings.is_conflicted = true;
+			}else{
+				//conflicting options are not enabled
+				option_is_conflicted = false;	
+				global.options_array[array_index].settings.is_conflicted = false;
+				global.options_array[option].settings.is_conflicted = false;
+			}
+		}
+	}else{
+		//we are not enabled
+		option_is_conflicted = false;	
+		global.options_array[array_index].settings.is_conflicted = false;
+		
+		var conflictor = global.options_array[array_index].conflicts[0];
+		var option = ds_list_find_index(global.options_index, conflictor);
+		global.options_array[option].settings.is_conflicted = false;
+	}
+}
 
 
 //USE THESE INSTEAD OF THE DLL ONES TO ADVOID WEIRD WINDOWS THIGNS

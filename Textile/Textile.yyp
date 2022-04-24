@@ -9,6 +9,7 @@
     {"id":{"name":"spr_toolbar_alt","path":"sprites/spr_toolbar_alt/spr_toolbar_alt.yy",},"order":5,},
     {"id":{"name":"spr_undying","path":"sprites/spr_undying/spr_undying.yy",},"order":18,},
     {"id":{"name":"spr_bigsmoke","path":"sprites/spr_bigsmoke/spr_bigsmoke.yy",},"order":0,},
+    {"id":{"name":"fnt_conflict","path":"fonts/fnt_conflict/fnt_conflict.yy",},"order":5,},
     {"id":{"name":"spr_pumpkin_ui","path":"sprites/spr_pumpkin_ui/spr_pumpkin_ui.yy",},"order":4,},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":0,},
     {"id":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},"order":17,},

@@ -1,3 +1,31 @@
+function create_option(_index,_name,_icon,_files,_optifine=false, _conflicts=[]){
+	//conflicts will be an array with the size of 0, so check size above 0 for if option has conflicts
+	
+	
+	//option struct data
+	option = {
+		index : _index,
+		icon : _icon,
+		str_name : _name,
+		files : _files,
+		is_optifine : _optifine,
+		conflicts : _conflicts,
+		
+		//settings for option object
+		settings : {
+			is_enabled : false,
+			is_conflicted : false
+		}
+	};
+	
+	//add options to list index to get array position later
+	var option_name = string_replace(_name,"\n"," ");
+	ds_list_set(global.options_index,_index,option_name);
+	
+	//returns built struct
+	return(option);
+}
+
 function create_global_options_array(){
 
 var i = 0;
@@ -5,7 +33,7 @@ global.options_array[i] =	create_option(i,	"Datapack Assets",					spr_datapack,	
 global.options_array[++i] = create_option(i+1,	"Plugin Assets",					spr_plugin_assets,		["_plugin\\"],										true);
 global.options_array[++i] = create_option(i+1,	"Optifine Colors"+"\n"+"Helper",	spr_opt_color_helper,	["_Optifine options\\optifine colors helper\\"],	true);
 global.options_array[++i] = create_option(i+1,	"Lang assets",						spr_evanski_lang,		["gui\\evanski lang\\"],);
-global.options_array[++i] = create_option(i+1,	"Entity Fire"+"\n"+"Patch",			spr_entity_fire,		["patches\\entity fire\\"],);
+global.options_array[++i] = create_option(i+1,	"Entity Fire"+"\n"+"Patch",			spr_entity_fire,		["patches\\entity fire\\"], false, ["Black Fire"]);
 										  
 global.options_array[++i] = create_option(i+1,	"Vanilla Memes",					spr_vanillia_meme,		["vanilla memes\\"],);
 global.options_array[++i] = create_option(i+1,	"Infestation"+"\n"+"Vision",		spr_silverfish_vision,	["helpful\\infestation vision\\"],);
@@ -31,8 +59,8 @@ global.options_array[++i] = create_option(i+1,	"MC Armory",						spr_mc_armory,	
 global.options_array[++i] = create_option(i+1,	"Rubies",							spr_rubies,				["retextures\\rubies\\"],);
 global.options_array[++i] = create_option(i+1,	"Wooden Buckets",					spr_wooden_bucket,		["retextures\\wooden buckets\\"],);
 global.options_array[++i] = create_option(i+1,	"Iron bowls",						spr_iron_bowls,			["retextures\\iron bowls\\"],);
-global.options_array[++i] = create_option(i+1,	"Bluestone",						spr_bluestone,			["retextures\\bluestone\\"],);
-global.options_array[++i] = create_option(i+1,	"RGB Gamer Lamp",					spr_gamerlamp,			["retextures\\gamer Lamp\\"],);
+global.options_array[++i] = create_option(i+1,	"Bluestone",						spr_bluestone,			["retextures\\bluestone\\"], false, ["RGB Gamer Lamp"]);
+global.options_array[++i] = create_option(i+1,	"RGB Gamer Lamp",					spr_gamerlamp,			["retextures\\gamer Lamp\\"], false, ["Bluestone"]);
 global.options_array[++i] = create_option(i+1,	"Green lantern",					spr_lantern,			["retextures\\green lantern\\"],);										  
 global.options_array[++i] = create_option(i+1,	"Paintings",						spr_paintings,			["retextures\\paintings\\"],);
 global.options_array[++i] = create_option(i+1,	"Rick Break",						spr_rick_break,			["retextures\\rick break\\"],);
@@ -44,7 +72,7 @@ global.options_array[++i] = create_option(i+1,	"Glitched Grass",					spr_glitche
 global.options_array[++i] = create_option(i+1,	"Glitched Moss",					spr_glitched_moss,		["retextures\\glitched moss\\"],);
 global.options_array[++i] = create_option(i+1,	"Black Nether"+"\n"+"Portal",		spr_black_portal,		["retextures\\black nether portal\\"],);
 global.options_array[++i] = create_option(i+1,	"Black Lava",						spr_black_lava,			["retextures\\black lava\\"],);										  
-global.options_array[++i] = create_option(i+1,	"Black Fire",						spr_black_fire,			["retextures\\black fire\\"],);
+global.options_array[++i] = create_option(i+1,	"Black Fire",						spr_black_fire,			["retextures\\black fire\\"], false, ["Entity Fire Patch"]);
 global.options_array[++i] = create_option(i+1,	"White Fire",						spr_white_fire,			["retextures\\white soul fire\\"],);
 global.options_array[++i] = create_option(i+1,	"Gay Cobblestone",					spr_gay_cobble,			["retextures\\gay cobble stone\\"],);
 global.options_array[++i] = create_option(i+1,	"Craftfurnace",						spr_craftfurnace,		["retextures\\crafting furnace\\"],);

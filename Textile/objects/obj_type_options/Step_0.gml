@@ -1,4 +1,5 @@
-option_enabled = global.options_array[array_index].settings.is_enabled;
+//option_enabled = global.options_array[array_index].settings.is_enabled;
+//option_is_conflicted = global.options_array[array_index].settings.is_conflicted;
 
 var _mouse_x = device_mouse_x(0);
 var _mouse_y = device_mouse_y(0);
@@ -37,11 +38,11 @@ if (is_optifine_option){
 
 //rectangle background color
 if (option_enabled){
-	background_color_active = background_color_enabled;	
-}else{
-	if !(option_is_conflicted){
-		background_color_active = background_color_normal;	
+	if (option_is_conflicted){
+		background_color_active = background_color_conflict;
 	}else{
-		background_color_active = background_color_conflict;		
+		background_color_active = background_color_enabled;	
 	}
+}else{
+	background_color_active = background_color_normal;	
 }

@@ -1,25 +1,3 @@
-function create_option(_index,_name,_icon,_files,_optifine=false){
-	
-	//option struct data
-	option = {
-		index : _index,
-		icon : _icon,
-		str_name : _name,
-		files : _files,
-		is_optifine : _optifine,
-		
-		//settings for option object
-		settings : {
-			is_enabled : false,
-			is_conflicted : false
-		}
-	};
-	
-	//returns built struct
-	return(option);
-}
-
-
 //create options array
 create_global_options_array();
 
