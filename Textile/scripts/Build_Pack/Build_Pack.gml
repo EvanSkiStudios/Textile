@@ -1,5 +1,6 @@
 function Build_Pack(){
 	
+		var build_error = 0;
 		var finished = false;
 		var build_error = false;
 	
@@ -31,7 +32,24 @@ function Build_Pack(){
 					option_name = string_replace(option_name,"\n"," ");
 				
 					//check conflicts
-				
+					var conflicters = check_conflicts_on_build(i);
+					
+					//we have conflicts
+					if (conflicters[0] != 0){
+						var warning_string = (
+						"WARNNING!!!"+"\n"+"\n"+
+						string(option_name)+"\n"+"\n"+
+						"Is conflicted with"+"\n"+"\n"+
+						conflicters[1]+"\n"+"\n"+
+						"Build Process will now stop!"
+						);
+						
+						show_message(warning_string);
+						
+						build_error = 1;
+						show_debug_message("Build Pack Exited with status: "+string(build_error));	
+						break;
+					}
 					//get option files path
 					var option_files = string((global.options_array[i].files[0]));
 					show_debug_message(resource_dir+option_files);
@@ -42,6 +60,7 @@ function Build_Pack(){
 			}
 		
 			//turns off the while loop to unlock the thread and allow us to continue
+			show_debug_message("Build Pack Exited with status: "+string(build_error));	
 			finished = true;
 		}
 	

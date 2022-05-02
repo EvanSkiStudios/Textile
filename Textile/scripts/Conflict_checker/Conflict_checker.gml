@@ -56,3 +56,28 @@ function check_conflicts_step(){
 		}
 	}
 }
+
+function check_conflicts_on_build(_index){
+	var conflicts_array = [0,""];
+	
+	//get if we have conflixts
+	var conflict_array_length = array_length((global.options_array[_index].conflicts));
+	if ( (conflict_array_length) > 0){
+		//get conflictor and see if they are enabled
+		var conflictor = global.options_array[_index].conflicts[0];
+		var option = ds_list_find_index(global.options_index, conflictor);
+			
+		//if conflictor is enabled then update our status
+		if (global.options_array[option].settings.is_enabled){
+			//conflicting option is enabled with this one
+			//get conflicting option name
+			var option_name = (global.options_array[option].str_name);
+			option_name = string_replace(option_name,"\n"," ");
+			
+			//add info to array
+			conflicts_array = [1, option_name];
+		}
+	}
+	//return array
+	return(conflicts_array);
+}
