@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "": [ 
-	{ "model": "minecraft:block/moss_carpet" }, { "model": "minecraft:block/moss/moss_carpet1" }, { "model": "minecraft:block/moss/moss_carpet2" }  
-	]
-  }
-}

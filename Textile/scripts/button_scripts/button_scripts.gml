@@ -7,6 +7,16 @@ function button_help_message(){
 	);		
 }
 
+function button_select_all(){
+	
+	with(obj_type_options){
+		option_enabled = true;
+		event_user(0);
+	}
+	show_message("All options should be enabled")
+}
+
+
 function button_preset_save(){
 	if (file_exists("preset.cfg")) file_delete("preset.cfg");
 	
@@ -20,7 +30,7 @@ function button_preset_save(){
 	}
 	
 	var save_struct = {
-		textile_ver : global.textile_ver,
+		textile_ver : TEXTILE_VER,
 		optifine_set : bool(global.settings_optifine_enabled),
 		data : save_array	
 	};
@@ -50,12 +60,17 @@ function button_preset_load(){
 		global.options_array[i].settings.is_enabled = bool(_bool);
 	}
 	
+	//update objects
+	with(obj_type_options){
+		event_user(1);	
+	}
+	
 	//set optifine value
 	if variable_struct_exists(game_struct,"optifine_set") global.settings_optifine_enabled = bool(game_struct.optifine_set);
 	
 	//get settings mismatch error handling
 	if variable_struct_exists(game_struct,"textile_ver"){
-		if (game_struct.textile_ver == global.textile_ver){
+		if (game_struct.textile_ver == TEXTILE_VER){
 			//everything is okay
 			show_message("Preset Loaded Successfully!");
 		}else{
@@ -97,72 +112,5 @@ function button_download_optifine(){
 }
 
 function button_create_resourcepack(){
-	var finished = false;
-	var build_error = false;
-	
-	//do a while loop, because gms is single threaded so we lock the thread to only process the file transfers in the dll
-	while(!finished){
-		//set file paths
-		export_location = (game_save_id + "Evanskis Chaos Pack Custom\\");
-		export_location_ext = (game_save_id + "Evanskis Chaos Pack Custom\\assets\\minecraft\\");
-	
-		//get rid of old export if one exists
-		if (directory_exists(export_location)){
-			directory_destroy(export_location);	
-		}
-	
-		resource_dir = (working_directory+"Resources\\");
-	
-		//Add base
-		better_directory_copy(resource_dir+"_Base", export_location);
-	
-		var array_len = array_length(global.options_array);
-	
-		for (var i = 0; i < array_len; ++i){
-			if (global.options_array[i].settings.is_enabled){
-				//sanatize option name
-				var option_name = (global.options_array[i].str_name);
-				option_name = string_replace(option_name,"\n"," ");
-				
-				//check conflicts
-				if (global.options_array[i].settings.is_conflicted == true){
-					show_message(
-					"Warning! There are Conflicting Options\n"+
-					option_name + " | " + global.options_array[i].conflicts[0]+
-					"\n"+
-					"Building will not continue until these are solved!"
-					);
-					build_error = true;
-					break;
-				}
-				
-				//get option files path
-				var option_files = string((global.options_array[i].files[0]));
-				show_debug_message(option_files);
-			
-				//copy files
-				better_directory_copy(resource_dir+option_files, export_location_ext);
-			}
-		}
-		
-		//turns off the while loop to unlock the thread and allow us to continue
-		finished = true;
-	}
-	
-	if (build_error) return(-1); //their is an error
-	
-	//Finish
-	show_message("Pack created at:\n"+string(export_location));
-	show_debug_message("Pack created at:\n"+string(export_location));
-	
-	
-
-/* alternitive? unproven if causes other errors / blows up on others pcs
-	var old_working_dir = working_directory;
-	
-	var te = directory_set_current_working(game_save_id); show_message(te);
-	
-	var test = directory_copy(old_working_dir+"Resources\\_Base", game_save_id + "Evanskis Chaos Pack\\");
-	show_message(test);
-	*/
+	Build_Pack();
 }

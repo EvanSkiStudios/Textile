@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "minecraft:item/rabbit_stew"
-  },
-  "overrides": [
-		{ "predicate": {"custom_model_data":7083}, "model": "item/custom_food/fruit_salad"}
- ]
-}

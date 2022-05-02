@@ -1,3 +1,5 @@
+///@desc Update array
+
 check_conflicts();
 
 //option struct data	

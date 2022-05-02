@@ -1,4 +1,4 @@
-toolbar_check_activated(button_help);
+toolbar_check_activated(button_select_all_options);
 toolbar_check_activated(button_preset_S);
 toolbar_check_activated(button_preset_L);
 toolbar_check_activated(button_optifine_toggle);

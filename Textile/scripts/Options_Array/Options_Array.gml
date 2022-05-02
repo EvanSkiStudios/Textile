@@ -52,6 +52,7 @@ global.options_array[++i] = create_option(i+1,	"Pumpkin UI",						spr_pumpkin_ui
 global.options_array[++i] = create_option(i+1,	"Teletubby Sun",					spr_sun,				["retextures\\teletubby sun\\"],);
 global.options_array[++i] = create_option(i+1,	"Meme Moon",						spr_moon,				["retextures\\moon faces\\"],);
 global.options_array[++i] = create_option(i+1,	"Nic Cage Rain",					spr_rain,				["retextures\\nic cage rain\\"],);
+global.options_array[++i] = create_option(i+1,	"Pikachu Shadows",					spr_pikachu_shadows,	["gui\\pikachu_shadows"],);
 
 global.options_array[++i] = create_option(i+1,	"True Iron"+"\n"+"Crafting",		spr_true_iron,			["retextures\\true iron crafting\\"],);
 global.options_array[++i] = create_option(i+1,	"Wacky items",						spr_wacky_item,			["retextures\\wacky items\\"],);
@@ -76,6 +77,7 @@ global.options_array[++i] = create_option(i+1,	"Black Fire",						spr_black_fire
 global.options_array[++i] = create_option(i+1,	"White Fire",						spr_white_fire,			["retextures\\white soul fire\\"],);
 global.options_array[++i] = create_option(i+1,	"Gay Cobblestone",					spr_gay_cobble,			["retextures\\gay cobble stone\\"],);
 global.options_array[++i] = create_option(i+1,	"Craftfurnace",						spr_craftfurnace,		["retextures\\crafting furnace\\"],);
+global.options_array[++i] = create_option(i+1,	"Moving Grass",						spr_moving_grass,		["retextures\\moving grass\\"],);
 global.options_array[++i] = create_option(i+1,	"Upside down"+"\n"+"torches",		spr_torch,				["retextures\\torch\\"],);
 global.options_array[++i] = create_option(i+1,	"Steve Boats",						spr_steveboat,			["_Optifine options\\steve boat\\"],);
 										  

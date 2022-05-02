@@ -1,7 +1,26 @@
 #macro GAMESPEED game_get_speed(gamespeed_fps)
 
+//unzip resources
+var num = zip_unzip("Resources.zip",working_directory);
+if num <= 0
+{
+	var a = 0, b = 0, c = 0;
+	try{
+	    c = a div b;
+	}catch( _exception){
+		show_error("Resource Extraction Failed!",true);
+	}
+}
+#region syntax disable for unsued vars
+if (false){
+	_exception = 0;
+}
+#endregion
 
-global.textile_ver = 120;
+show_debug_message("#### Unzipped Resources to : "+string(directory_get_current_working())+" ##### ");
+
+
+#macro TEXTILE_VER 130
 
 global.camera_y_pos = 0;
 global.settings_optifine_enabled = true;
@@ -11,6 +30,7 @@ global.options_index = ds_list_create();
 
 //for type options
 function check_conflicts(){
+	/*
 	if (option_enabled){
 		if (array_length((global.options_array[array_index].conflicts)) > 0){
 			var conflictor = global.options_array[array_index].conflicts[0];
@@ -34,6 +54,7 @@ function check_conflicts(){
 		var option = ds_list_find_index(global.options_index, conflictor);
 		global.options_array[option].settings.is_conflicted = false;
 	}
+	*/
 }
 
 

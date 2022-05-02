@@ -25,6 +25,7 @@ if (is_optifine_option){
 }
 
 //draw icon
+icon_index = image_index;
 draw_sprite_ext(icon, icon_index, x,y, 1, 1, 0, c_white, 1);
 
 shader_reset();
