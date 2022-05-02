@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "sounds",
-    "path": "folders/GUI/options/icons/sounds.yy",
+    "path": "folders/options/icons/sounds.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_riptide",

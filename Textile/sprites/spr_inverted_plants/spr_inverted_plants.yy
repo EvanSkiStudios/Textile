@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "helpful",
-    "path": "folders/GUI/options/icons/helpful.yy",
+    "path": "folders/options/icons/helpful.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_inverted_plants",

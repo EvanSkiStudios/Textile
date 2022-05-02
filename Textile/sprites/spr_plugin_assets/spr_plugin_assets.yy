@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "plugin",
-    "path": "folders/GUI/options/icons/plugin.yy",
+    "path": "folders/options/icons/plugin.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_plugin_assets",

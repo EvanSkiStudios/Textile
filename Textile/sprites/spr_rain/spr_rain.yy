@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "retextures",
-    "path": "folders/GUI/options/icons/retextures.yy",
+    "path": "folders/options/icons/retextures.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_rain",

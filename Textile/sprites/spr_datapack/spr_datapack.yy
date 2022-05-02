@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "icons",
-    "path": "folders/GUI/options/icons.yy",
+    "path": "folders/options/icons.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_datapack",

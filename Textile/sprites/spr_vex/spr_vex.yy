@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "mobs",
-    "path": "folders/GUI/options/icons/mobs.yy",
+    "path": "folders/options/icons/mobs.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_vex",

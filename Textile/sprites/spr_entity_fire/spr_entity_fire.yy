@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "patches",
-    "path": "folders/GUI/options/icons/patches.yy",
+    "path": "folders/options/icons/patches.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_entity_fire",

@@ -1,7 +1,4 @@
 ///@desc Update array
-
-check_conflicts();
-
 //option struct data	
 global.options_array[array_index].settings = {
 	is_enabled : option_enabled,

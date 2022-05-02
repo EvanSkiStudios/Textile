@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "gui",
-    "path": "folders/GUI/options/icons/gui.yy",
+    "path": "folders/options/icons/gui.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_evanski_loading",

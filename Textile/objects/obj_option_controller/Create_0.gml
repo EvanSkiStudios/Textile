@@ -32,18 +32,20 @@ for (var i = 0; i < array_len; ++i){
 	with(option_obj){
 		var option_data = global.options_array[i];
 		
+		self_id =				option_obj;
 		sprite_index =			option_data.icon;
 		option_text_string =	option_data.str_name;
 		option_enabled =		option_data.settings.is_enabled;
 		option_is_conflicted =	option_data.settings.is_conflicted;
 		is_optifine_option =	option_data.is_optifine;
 		
+		//add my instance id to the array
+		global.options_array[i].my_id = self_id;
 		
 		//creation code
 		array_index = option_data.index;
 		
 		icon = sprite_index;
 		icon_index = image_index;
-	}
-	
+	}	
 }

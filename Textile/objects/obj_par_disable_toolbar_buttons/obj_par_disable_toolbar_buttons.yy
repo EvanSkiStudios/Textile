@@ -22,7 +22,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "toolbar",
-    "path": "folders/GUI/toolbar.yy",
+    "path": "folders/toolbar.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_par_disable_toolbar_buttons",

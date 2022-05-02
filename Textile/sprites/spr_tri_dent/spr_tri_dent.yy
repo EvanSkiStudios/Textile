@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "optifine options",
-    "path": "folders/GUI/options/icons/optifine options.yy",
+    "path": "folders/options/icons/optifine options.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_tri_dent",

@@ -130,7 +130,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "toolbar",
-    "path": "folders/GUI/toolbar.yy",
+    "path": "folders/toolbar.yy",
   },
   "resourceVersion": "1.0",
   "name": "fnt_toolbar",

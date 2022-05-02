@@ -130,7 +130,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "options",
-    "path": "folders/GUI/options.yy",
+    "path": "folders/options.yy",
   },
   "resourceVersion": "1.0",
   "name": "fnt_conflict",

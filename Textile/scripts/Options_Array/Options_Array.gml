@@ -4,6 +4,7 @@ function create_option(_index,_name,_icon,_files,_optifine=false, _conflicts=[])
 	
 	//option struct data
 	option = {
+		my_id : 0,
 		index : _index,
 		icon : _icon,
 		str_name : _name,

@@ -31,18 +31,6 @@ function Build_Pack(){
 					option_name = string_replace(option_name,"\n"," ");
 				
 					//check conflicts
-					/*
-					if (global.options_array[i].settings.is_conflicted == true){
-						show_message(
-						"Warning! There are Conflicting Options\n"+
-						option_name + " | " + global.options_array[i].conflicts[0]+
-						"\n"+
-						"Building will not continue until these are solved!"
-						);
-						build_error = true;
-						break;
-					}
-					*/
 				
 					//get option files path
 					var option_files = string((global.options_array[i].files[0]));
@@ -62,20 +50,4 @@ function Build_Pack(){
 		//Finish
 		show_message("Pack created at:\n"+string(export_location));
 		show_debug_message("Pack created at:\n"+string(export_location));
-	
-	
-
-	/* alternitive? unproven if causes other errors / blows up on others pcs
-		var old_working_dir = working_directory;
-	
-		var te = directory_set_current_working(game_save_id); show_message(te);
-	
-		var test = directory_copy(old_working_dir+"Resources\\_Base", game_save_id + "Evanskis Chaos Pack\\");
-		show_message(test);
-		*/
-	
-	
-	
-	
-
 }

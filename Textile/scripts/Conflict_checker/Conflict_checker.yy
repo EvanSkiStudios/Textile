@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "toolbar",
-    "path": "folders/toolbar.yy",
+    "name": "Textile",
+    "path": "Textile.yyp",
   },
   "resourceVersion": "1.0",
-  "name": "button_scripts",
+  "name": "Conflict_checker",
   "tags": [],
   "resourceType": "GMScript",
 }

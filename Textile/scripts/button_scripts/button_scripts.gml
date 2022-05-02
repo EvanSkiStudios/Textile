@@ -11,7 +11,7 @@ function button_select_all(){
 	
 	with(obj_type_options){
 		option_enabled = true;
-		event_user(0);
+		event_user(SET_OPTNS_SETS);
 	}
 	show_message("All options should be enabled")
 }
@@ -62,7 +62,7 @@ function button_preset_load(){
 	
 	//update objects
 	with(obj_type_options){
-		event_user(1);	
+		event_user(GET_OPTNS_SETS);	
 	}
 	
 	//set optifine value

@@ -19,11 +19,13 @@ if !(global.click_through_turnoff){
 					show_message("This option is disabled due to the Optifine setting being set to off!");
 				}else{
 					option_enabled = !option_enabled;
-					event_user(0);
+					event_user(SET_OPTNS_SETS);
+					check_conflicts_on_togl_enable();
 				}
 			}else{
 				option_enabled = !option_enabled;
-				event_user(0);
+				event_user(SET_OPTNS_SETS);
+				check_conflicts_on_togl_enable();
 			}
 		}
 	}
@@ -32,7 +34,7 @@ if !(global.click_through_turnoff){
 if (is_optifine_option){
 	if !(global.settings_optifine_enabled){
 		option_enabled = false;
-		event_user(0);
+		event_user(SET_OPTNS_SETS);
 	}
 }
 
