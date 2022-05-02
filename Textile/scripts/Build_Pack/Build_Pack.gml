@@ -46,6 +46,8 @@ function Build_Pack(){
 						
 						show_message(warning_string);
 						
+						//Overwrite options menu here
+						
 						build_error = 1;
 						show_debug_message("Build Pack Exited with status: "+string(build_error));	
 						break;
