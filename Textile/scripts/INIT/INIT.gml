@@ -1,5 +1,10 @@
 #macro GAMESPEED game_get_speed(gamespeed_fps)
 
+//get rid of old export if one exists
+if (directory_exists(working_directory+"\\Resources\\")){
+	directory_destroy(working_directory+"\\Resources\\");	
+}
+
 //unzip resources
 var num = zip_unzip("Resources.zip",working_directory);
 if num <= 0

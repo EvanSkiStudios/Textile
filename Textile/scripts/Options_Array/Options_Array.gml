@@ -107,6 +107,7 @@ global.options_array[++i] = create_option(i+1,	"Cat sounds",						spr_catsounds,
 global.options_array[++i] = create_option(i+1,	"Edgy Enderman",					spr_edgy_enderman,		["sounds\\edgy endermen\\"],		false);
 global.options_array[++i] = create_option(i+1,	"Endereye Pew",						spr_endereye_pew,		["sounds\\endereye pew\\"],			false);
 global.options_array[++i] = create_option(i+1,	"Evanski Records",					spr_evanski_records,	["sounds\\evanski records\\"],		false);
+global.options_array[++i] = create_option(i+1,	"gilbert parrots",					spr_gilbert_parrots,	["sounds\\gilbert parrots\\"],		false);
 global.options_array[++i] = create_option(i+1,	"Gordon Dragon",					spr_gordon_dragon,		["sounds\\gordon dragon\\"],		false);
 global.options_array[++i] = create_option(i+1,	"HaHa Anvils",						spr_haha_anvils,		["sounds\\haha anvils\\"],			false);																																				
 global.options_array[++i] = create_option(i+1,	"Kaboom",							spr_kaboom,				["sounds\\kaboom\\"],				false);

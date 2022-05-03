@@ -12,7 +12,6 @@ function button_select_all(){
 	with(obj_type_options){
 		option_enabled = true;
 		event_user(SET_OPTNS_SETS);
-		check_conflicts_on_togl_enable();
 	}
 	show_message("All options should be enabled")
 }

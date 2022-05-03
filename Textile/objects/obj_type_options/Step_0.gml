@@ -31,6 +31,22 @@ if !(global.click_through_turnoff){
 	}
 }
 
+//sync
+if (option_enabled){
+	if (global.options_array[array_index].settings.is_enabled){	
+		check_conflicts_on_togl_enable();
+	}else{
+		event_user(GET_OPTNS_SETS);
+	}
+}else{
+	if !(global.options_array[array_index].settings.is_enabled){	
+		check_conflicts_on_togl_enable();
+	}else{
+		event_user(GET_OPTNS_SETS);
+	}		
+}
+
+
 if (is_optifine_option){
 	if !(global.settings_optifine_enabled){
 		option_enabled = false;

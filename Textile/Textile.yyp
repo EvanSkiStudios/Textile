@@ -7,6 +7,7 @@
     {"id":{"name":"spr_opt_color_helper","path":"sprites/spr_opt_color_helper/spr_opt_color_helper.yy",},"order":2,},
     {"id":{"name":"Options_Array","path":"scripts/Options_Array/Options_Array.yy",},"order":1,},
     {"id":{"name":"spr_toolbar_alt","path":"sprites/spr_toolbar_alt/spr_toolbar_alt.yy",},"order":5,},
+    {"id":{"name":"spr_gilbert_parrots","path":"sprites/spr_gilbert_parrots/spr_gilbert_parrots.yy",},"order":20,},
     {"id":{"name":"spr_undying","path":"sprites/spr_undying/spr_undying.yy",},"order":18,},
     {"id":{"name":"spr_bigsmoke","path":"sprites/spr_bigsmoke/spr_bigsmoke.yy",},"order":0,},
     {"id":{"name":"fnt_conflict","path":"fonts/fnt_conflict/fnt_conflict.yy",},"order":5,},
@@ -161,8 +162,6 @@
     {"isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [
-    {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/moving_grass/block","resourceVersion":"1.0","name":"grass_block_top.png.mcmeta","resourceType":"GMIncludedFile",},
-    {"CopyToMask":-1,"filePath":"datafiles/Resources/retextures/moving_grass/block","resourceVersion":"1.0","name":"grass_block_top.png","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"Resources.zip","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
