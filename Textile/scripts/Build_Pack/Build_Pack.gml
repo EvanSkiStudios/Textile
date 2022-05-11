@@ -57,7 +57,12 @@ function Build_Pack(){
 					show_debug_message(resource_dir+option_files);
 			
 					//copy files
-					better_directory_copy(resource_dir+option_files, export_location_ext);
+					if (option_files == ("_datapack\\")){
+						better_directory_copy(resource_dir+option_files, (game_save_id + "Evanskis Chaos Pack Custom\\"));
+					}else{
+					
+						better_directory_copy(resource_dir+option_files, export_location_ext);
+					}
 				}
 			}
 		
