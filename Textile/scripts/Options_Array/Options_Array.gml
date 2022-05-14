@@ -76,6 +76,7 @@ global.options_array[++i] = create_option(i+1,	"Black Nether"+"\n"+"Portal",		sp
 global.options_array[++i] = create_option(i+1,	"Black Lava",						spr_black_lava,			["retextures\\black lava\\"],);										  
 global.options_array[++i] = create_option(i+1,	"Black Fire",						spr_black_fire,			["retextures\\black fire\\"], false, ["Entity Fire Patch"]);
 global.options_array[++i] = create_option(i+1,	"White Fire",						spr_white_fire,			["retextures\\white soul fire\\"],);
+global.options_array[++i] = create_option(i+1,	"leather armor",					spr_leather_armor,		["retextures\\leather armor\\"],);
 global.options_array[++i] = create_option(i+1,	"Gay Cobblestone",					spr_gay_cobble,			["retextures\\gay cobble stone\\"],);
 global.options_array[++i] = create_option(i+1,	"Craftfurnace",						spr_craftfurnace,		["retextures\\crafting furnace\\"],);
 global.options_array[++i] = create_option(i+1,	"Moving Grass",						spr_moving_grass,		["retextures\\moving grass\\"],);
@@ -123,4 +124,6 @@ global.options_array[++i] = create_option(i+1,	"The Illaging",						spr_the_illa
 global.options_array[++i] = create_option(i+1,	"Trap Chests",						spr_trap_chests,		["sounds\\trap chests\\"],			false);
 global.options_array[++i] = create_option(i+1,	"Call an Ambulance",				spr_undying,			["sounds\\undying\\"],				false);
 global.options_array[++i] = create_option(i+1,	"Wood Moans",						spr_wood_moans,			["sounds\\wood moans\\"],			false);
+global.options_array[++i] = create_option(i+1,	"Pufferfish Augh",					spr_pufferfish,			["sounds\\pufferfish augh\\"],		false);
+global.options_array[++i] = create_option(i+1,	"Sploosh Splash",					spr_sploosh,			["sounds\\sploosh splash\\"],		false);
 }

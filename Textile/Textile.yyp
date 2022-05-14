@@ -62,6 +62,7 @@
     {"id":{"name":"spr_endereye_pew","path":"sprites/spr_endereye_pew/spr_endereye_pew.yy",},"order":3,},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":1,},
     {"id":{"name":"spr_wooden_bucket","path":"sprites/spr_wooden_bucket/spr_wooden_bucket.yy",},"order":21,},
+    {"id":{"name":"spr_pufferfish","path":"sprites/spr_pufferfish/spr_pufferfish.yy",},"order":21,},
     {"id":{"name":"spr_hoppers","path":"sprites/spr_hoppers/spr_hoppers.yy",},"order":6,},
     {"id":{"name":"spr_rubies","path":"sprites/spr_rubies/spr_rubies.yy",},"order":16,},
     {"id":{"name":"obj_room_scroller","path":"objects/obj_room_scroller/obj_room_scroller.yy",},"order":1,},
@@ -71,6 +72,7 @@
     {"id":{"name":"button_scripts","path":"scripts/button_scripts/button_scripts.yy",},"order":2,},
     {"id":{"name":"spr_toolbar_button","path":"sprites/spr_toolbar_button/spr_toolbar_button.yy",},"order":6,},
     {"id":{"name":"Conflict_checker","path":"scripts/Conflict_checker/Conflict_checker.yy",},"order":3,},
+    {"id":{"name":"spr_leather_armor","path":"sprites/spr_leather_armor/spr_leather_armor.yy",},"order":27,},
     {"id":{"name":"spr_toolbar","path":"sprites/spr_toolbar/spr_toolbar.yy",},"order":4,},
     {"id":{"name":"spr_punch_dragon","path":"sprites/spr_punch_dragon/spr_punch_dragon.yy",},"order":11,},
     {"id":{"name":"spr_black_lava","path":"sprites/spr_black_lava/spr_black_lava.yy",},"order":2,},
@@ -110,6 +112,7 @@
     {"id":{"name":"spr_evanski_lang","path":"sprites/spr_evanski_lang/spr_evanski_lang.yy",},"order":2,},
     {"id":{"name":"spr_gangsters","path":"sprites/spr_gangsters/spr_gangsters.yy",},"order":5,},
     {"id":{"name":"spr_evanski_banner","path":"sprites/spr_evanski_banner/spr_evanski_banner.yy",},"order":6,},
+    {"id":{"name":"spr_sploosh","path":"sprites/spr_sploosh/spr_sploosh.yy",},"order":22,},
     {"id":{"name":"fnt_toolbar","path":"fonts/fnt_toolbar/fnt_toolbar.yy",},"order":8,},
   ],
   "Options": [
