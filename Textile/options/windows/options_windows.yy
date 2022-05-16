@@ -1,7 +1,7 @@
 {
-  "option_windows_display_name": "Textile V.1.3 by Evanski",
+  "option_windows_display_name": "Textile V.1.4 by Evanski",
   "option_windows_executable_name": "${project_name}.exe",
-  "option_windows_version": "1.3.0.0",
+  "option_windows_version": "1.4.0.0",
   "option_windows_company_info": "EvanskiStudios",
   "option_windows_product_info": "Textile",
   "option_windows_copyright_info": "EvanskiStudios",

@@ -30,6 +30,7 @@ function create_option(_index,_name,_icon,_files,_optifine=false, _conflicts=[])
 function create_global_options_array(){
 
 var i = 0;
+
 global.options_array[i] =	create_option(i,	"Datapack Assets",					spr_datapack,			["_datapack\\"],									true);
 global.options_array[++i] = create_option(i+1,	"Plugin Assets",					spr_plugin_assets,		["_plugin\\"],										true);
 global.options_array[++i] = create_option(i+1,	"Optifine Colors"+"\n"+"Helper",	spr_opt_color_helper,	["_Optifine options\\optifine colors helper\\"],	true);
@@ -53,6 +54,7 @@ global.options_array[++i] = create_option(i+1,	"Pumpkin UI",						spr_pumpkin_ui
 global.options_array[++i] = create_option(i+1,	"Teletubby Sun",					spr_sun,				["retextures\\teletubby sun\\"],);
 global.options_array[++i] = create_option(i+1,	"Meme Moon",						spr_moon,				["retextures\\moon faces\\"],);
 global.options_array[++i] = create_option(i+1,	"Nic Cage Rain",					spr_rain,				["retextures\\nic cage rain\\"],);
+global.options_array[++i] = create_option(i+1,	"Vector Rain",						spr_vector_rain,		["retextures\\Vector rain\\"],);
 global.options_array[++i] = create_option(i+1,	"Pikachu Shadows",					spr_pikachu_shadows,	["gui\\pikachu_shadows"],);
 
 global.options_array[++i] = create_option(i+1,	"True Iron"+"\n"+"Crafting",		spr_true_iron,			["retextures\\true iron crafting\\"],);
@@ -126,4 +128,5 @@ global.options_array[++i] = create_option(i+1,	"Call an Ambulance",				spr_undyi
 global.options_array[++i] = create_option(i+1,	"Wood Moans",						spr_wood_moans,			["sounds\\wood moans\\"],			false);
 global.options_array[++i] = create_option(i+1,	"Pufferfish Augh",					spr_pufferfish,			["sounds\\pufferfish augh\\"],		false);
 global.options_array[++i] = create_option(i+1,	"Sploosh Splash",					spr_sploosh,			["sounds\\sploosh splash\\"],		false);
+
 }

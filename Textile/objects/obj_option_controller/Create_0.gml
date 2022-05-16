@@ -1,3 +1,12 @@
+//decative camera region
+var cam;
+cam = view_camera[0];
+cam_y = camera_get_view_y(cam);
+cam_y_last = -1000;
+
+alarm_speed = (GAMESPEED) / 4;
+alarm[0] = alarm_speed;
+
 //create options array
 create_global_options_array();
 
