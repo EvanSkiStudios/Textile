@@ -14,6 +14,24 @@ If I have used one of your assets in this and you wish for it to be removed plea
 Special Thanks to [Samuel Venable](https://github.com/time-killer-games) for [libfilesystem](https://github.com/time-killer-games/libfilesystem)
 
 # Change Log
+## Version 1.4
+* Added Option Nicolas Cage Rain
+* Added Option Vector Rain
+* Added Option Leather Armor Remodel
+* Added Option Moving Grass
+* Added Option Gilbert Gottfried Iago Parrots
+* Added Option Pufferfish Augh
+* Added Option LOZ Wind Waker Sploosh Splash
+
+* Added Select All button
+
+* Bug fixes, Optimization Improvements, Loading Screen
+
+* The resources are now in a zip that auto unzips at the start of the program
+
+* Removal of x32 Support due to GameMaker and Microsoft Dropping support for those systems
+
+
 ## Version 1.2
 * Now works on "x32"/x86 based systems
 * Renamed output folder to "Evanski Chaos Pack Custom"
