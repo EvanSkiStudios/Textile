@@ -53,8 +53,8 @@ global.options_array[++i] = create_option(i+1,	"yrotnevnI",						spr_inven,				[
 global.options_array[++i] = create_option(i+1,	"Pumpkin UI",						spr_pumpkin_ui,			["gui\\pumpkin ui\\"],);
 global.options_array[++i] = create_option(i+1,	"Teletubby Sun",					spr_sun,				["retextures\\teletubby sun\\"],);
 global.options_array[++i] = create_option(i+1,	"Meme Moon",						spr_moon,				["retextures\\moon faces\\"],);
-global.options_array[++i] = create_option(i+1,	"Nic Cage Rain",					spr_rain,				["retextures\\nic cage rain\\"],);
-global.options_array[++i] = create_option(i+1,	"Vector Rain",						spr_vector_rain,		["retextures\\Vector rain\\"],);
+global.options_array[++i] = create_option(i+1,	"Nic Cage Rain",					spr_rain,				["retextures\\nic cage rain\\"],,["Vector Rain"]);
+global.options_array[++i] = create_option(i+1,	"Vector Rain",						spr_vector_rain,		["retextures\\Vector rain\\"],,["Nic Cage Rain"]);
 global.options_array[++i] = create_option(i+1,	"Pikachu Shadows",					spr_pikachu_shadows,	["gui\\pikachu_shadows"],);
 
 global.options_array[++i] = create_option(i+1,	"True Iron"+"\n"+"Crafting",		spr_true_iron,			["retextures\\true iron crafting\\"],);

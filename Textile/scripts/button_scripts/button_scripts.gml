@@ -9,6 +9,8 @@ function button_help_message(){
 
 function button_select_all(){
 	
+	instance_activate_object(obj_type_options);
+	
 	with(obj_type_options){
 		option_enabled = true;
 		event_user(SET_OPTNS_SETS);
@@ -54,12 +56,13 @@ function button_preset_load(){
 	var game_struct = json_parse(json_string);
 	
 	var array_len = array_length(game_struct.data);
-	
+
 	for (var i = 0; i < array_len; ++i){
 		var _bool = game_struct.data[i];
 		global.options_array[i].settings.is_enabled = bool(_bool);
 	}
 	
+	instance_activate_object(obj_type_options);
 	//update objects
 	with(obj_type_options){
 		event_user(GET_OPTNS_SETS);

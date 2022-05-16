@@ -46,6 +46,11 @@ function Build_Pack(){
 						
 						show_message(warning_string);
 						
+						//delete the pack stuff we moved
+						if (directory_exists(export_location)){
+							directory_destroy(export_location);	
+						}
+						
 						//Overwrite options menu here
 						
 						build_error = 1;
