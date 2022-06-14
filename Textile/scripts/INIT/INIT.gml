@@ -3,7 +3,7 @@ if (debug_mode) show_debug_overlay(true);
 #macro GAMESPEED game_get_speed(gamespeed_fps)
 
 
-#macro TEXTILE_VER 140
+#macro TEXTILE_VER 150
 
 global.camera_y_pos = 0;
 global.settings_optifine_enabled = true;

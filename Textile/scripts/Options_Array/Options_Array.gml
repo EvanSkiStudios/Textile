@@ -51,6 +51,7 @@ global.options_array[++i] = create_option(i+1,	"Red Boss Bars",					spr_red_bar,
 global.options_array[++i] = create_option(i+1,	"Rainbow XP",						spr_rainbow_xp,			["_Optifine options\\rainbow xp\\"],);
 global.options_array[++i] = create_option(i+1,	"yrotnevnI",						spr_inven,				["gui\\yrotnevni\\"],);
 global.options_array[++i] = create_option(i+1,	"Pumpkin UI",						spr_pumpkin_ui,			["gui\\pumpkin ui\\"],);
+global.options_array[++i] = create_option(i+1,	"Evan UI",							spr_evui,				["gui\\evan ui"],);
 global.options_array[++i] = create_option(i+1,	"Teletubby Sun",					spr_sun,				["retextures\\teletubby sun\\"],);
 global.options_array[++i] = create_option(i+1,	"Meme Moon",						spr_moon,				["retextures\\moon faces\\"],);
 global.options_array[++i] = create_option(i+1,	"Nic Cage Rain",					spr_rain,				["retextures\\nic cage rain\\"],,["Vector Rain"]);
@@ -84,11 +85,14 @@ global.options_array[++i] = create_option(i+1,	"Craftfurnace",						spr_craftfur
 global.options_array[++i] = create_option(i+1,	"Moving Grass",						spr_moving_grass,		["retextures\\moving grass\\"],);
 global.options_array[++i] = create_option(i+1,	"Upside down"+"\n"+"torches",		spr_torch,				["retextures\\torch\\"],);
 global.options_array[++i] = create_option(i+1,	"Steve Boats",						spr_steveboat,			["_Optifine options\\steve boat\\"],);
+global.options_array[++i] = create_option(i+1,	"Extended Clouds",					spr_extendedclouds,		["retextures\\extended clouds\\"],);
+global.options_array[++i] = create_option(i+1,	"Bitcoin Emerald",					spr_bitcoin,			["retextures\\bitcoin emeralds\\"],);
 										  
 global.options_array[++i] = create_option(i+1,	"Berry Bee Benson",					spr_berrybeebenson,		["mobs\\barry bee benson\\"],);
 global.options_array[++i] = create_option(i+1,	"Freddy",							spr_freddy,				["mobs\\freddy\\"],);
 global.options_array[++i] = create_option(i+1,	"Swole villager",					spr_swole,				["mobs\\swole villager\\"],);
 global.options_array[++i] = create_option(i+1,	"Vexing Merc",						spr_vex,				["mobs\\vexing merc\\"],);
+global.options_array[++i] = create_option(i+1,	"SquidWARD",						spr_squidward,			["mobs\\SquidWARD\\"],);
 										  
 global.options_array[++i] = create_option(i+1,	"Beta Pigs",						spr_beta_pigs,			["_Optifine options\\mobs\\beta pigs\\"],				true);
 global.options_array[++i] = create_option(i+1,	"Boats with Legs",					spr_boat_with_legs,		["_Optifine options\\mobs\\boats with legs\\"],			true);
@@ -128,5 +132,6 @@ global.options_array[++i] = create_option(i+1,	"Call an Ambulance",				spr_undyi
 global.options_array[++i] = create_option(i+1,	"Wood Moans",						spr_wood_moans,			["sounds\\wood moans\\"],			false);
 global.options_array[++i] = create_option(i+1,	"Pufferfish Augh",					spr_pufferfish,			["sounds\\pufferfish augh\\"],		false);
 global.options_array[++i] = create_option(i+1,	"Sploosh Splash",					spr_sploosh,			["sounds\\sploosh splash\\"],		false);
+global.options_array[++i] = create_option(i+1,	"Thats a\nlot of crit",				spr_alotofcrit,			["sounds\\thats a lot of crit\\"],	false);
 
 }
