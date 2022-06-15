@@ -62,11 +62,18 @@ function Build_Pack(){
 					show_debug_message(resource_dir+option_files);
 			
 					//copy files
-					if (option_files == ("_datapack\\")){
-						better_directory_copy(resource_dir+option_files, (game_save_id + "Evanskis Chaos Pack Custom\\"));
-					}else{
 					
-						better_directory_copy(resource_dir+option_files, export_location_ext);
+					switch(option_files){
+						case	("_datapack\\"):{
+							better_directory_copy(resource_dir+option_files, (game_save_id + "Evanskis Chaos Pack Custom\\"));	
+						}break;
+						
+						case ("_3rd party\\Tailored Hats\\"):{
+							better_directory_copy(resource_dir+option_files, (game_save_id + "Evanskis Chaos Pack Custom\\assets\\"));
+						}break;
+						
+						default: better_directory_copy(resource_dir+option_files, export_location_ext); break;
+						
 					}
 				}
 			}

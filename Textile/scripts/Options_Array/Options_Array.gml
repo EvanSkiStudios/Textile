@@ -35,8 +35,12 @@ global.options_array[i] =	create_option(i,	"Datapack Assets",					spr_datapack,	
 global.options_array[++i] = create_option(i+1,	"Plugin Assets",					spr_plugin_assets,		["_plugin\\"],										true);
 global.options_array[++i] = create_option(i+1,	"Optifine Colors"+"\n"+"Helper",	spr_opt_color_helper,	["_Optifine options\\optifine colors helper\\"],	true);
 global.options_array[++i] = create_option(i+1,	"Lang assets",						spr_evanski_lang,		["gui\\evanski lang\\"],);
-global.options_array[++i] = create_option(i+1,	"Entity Fire"+"\n"+"Patch",			spr_entity_fire,		["patches\\entity fire\\"], false, ["Black Fire"]);
-										  
+
+
+global.options_array[++i] = create_option(i+1,	"Tailored Hats\nby\nTristenLosey",	spr_tailhats,			["_3rd party\\Tailored Hats\\"],true);
+
+
+global.options_array[++i] = create_option(i+1,	"Entity Fire"+"\n"+"Patch",			spr_entity_fire,		["patches\\entity fire\\"], false, ["Black Fire"]);									
 global.options_array[++i] = create_option(i+1,	"Vanilla Memes",					spr_vanillia_meme,		["vanilla memes\\"],);
 global.options_array[++i] = create_option(i+1,	"Infestation"+"\n"+"Vision",		spr_silverfish_vision,	["helpful\\infestation vision\\"],);
 global.options_array[++i] = create_option(i+1,	"Inverted Grass",					spr_inverted_grass,		["helpful\\inverted grass\\"],						true);
@@ -58,6 +62,7 @@ global.options_array[++i] = create_option(i+1,	"Nic Cage Rain",					spr_rain,			
 global.options_array[++i] = create_option(i+1,	"Vector Rain",						spr_vector_rain,		["retextures\\Vector rain\\"],,["Nic Cage Rain"]);
 global.options_array[++i] = create_option(i+1,	"Pikachu Shadows",					spr_pikachu_shadows,	["gui\\pikachu_shadows"],);
 
+global.options_array[++i] = create_option(i+1,	"Evan Hats",						spr_evanhats,			["_Optifine options\\ev_hats\\"], true);
 global.options_array[++i] = create_option(i+1,	"True Iron"+"\n"+"Crafting",		spr_true_iron,			["retextures\\true iron crafting\\"],);
 global.options_array[++i] = create_option(i+1,	"Wacky items",						spr_wacky_item,			["retextures\\wacky items\\"],);
 global.options_array[++i] = create_option(i+1,	"MC Armory",						spr_mc_armory,			["_Optifine options\\mc armory\\"], true);
