@@ -14,6 +14,15 @@ If I have used one of your assets in this and you wish for it to be removed plea
 Special Thanks to [Samuel Venable](https://github.com/time-killer-games) for [libfilesystem](https://github.com/time-killer-games/libfilesystem)
 
 # Change Log
+## Version 1.5
+* Added hats
+* Added tailored hats by Tristen Losey
+* Added diamonds
+* Added passcom
+* Added ended end
+
+* Fixed issues with missing assets for some selections
+
 ## Version 1.4
 * Added Option Nicolas Cage Rain
 * Added Option Vector Rain
