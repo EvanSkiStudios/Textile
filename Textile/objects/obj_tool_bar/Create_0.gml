@@ -129,9 +129,10 @@ function toolbar_button_draw(_button){
 
 //Create buttons
 //button_help =				new toolbar_button(, "About",				button_help_message);
-button_select_all_options =	new toolbar_button(, "Select all",				button_select_all);
+button_select_all_options =	new toolbar_button(, "Select all",			button_select_all);
 button_preset_S =			new toolbar_button(, "Save Preset",			button_preset_save);
 button_preset_L =			new toolbar_button(, "Load Preset",			button_preset_load);
 button_optifine_toggle =	new toolbar_button(, "Toggle Optifine",		button_toggle_optifine);
 button_optifine_download =	new toolbar_button(, "Download Optifine",	button_download_optifine);
 button_create_RP =			new toolbar_button(, "Build Pack",			button_create_resourcepack);
+button_create_zip =			new toolbar_button(, "Auto-Zip",			button_help_message);

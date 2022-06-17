@@ -20,3 +20,4 @@ toolbar_button_draw(button_preset_L);
 toolbar_button_draw(button_optifine_toggle);
 toolbar_button_draw(button_optifine_download);
 toolbar_button_draw(button_create_RP);
+toolbar_button_draw(button_create_zip);

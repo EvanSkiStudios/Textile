@@ -63,8 +63,11 @@ global.options_array[++i] = create_option(i+1,	"Vector Rain",						spr_vector_ra
 global.options_array[++i] = create_option(i+1,	"Pikachu Shadows",					spr_pikachu_shadows,	["gui\\pikachu_shadows"],);
 
 global.options_array[++i] = create_option(i+1,	"Evan Hats",						spr_evanhats,			["_Optifine options\\ev_hats\\"], true);
+global.options_array[++i] = create_option(i+1,	"Ended End",						spr_ended_end,			["retextures\\ended end\\"],);
 global.options_array[++i] = create_option(i+1,	"True Iron"+"\n"+"Crafting",		spr_true_iron,			["retextures\\true iron crafting\\"],);
 global.options_array[++i] = create_option(i+1,	"Wacky items",						spr_wacky_item,			["retextures\\wacky items\\"],);
+global.options_array[++i] = create_option(i+1,	"Diamonds",							spr_diamond,			["retextures\\diamonds\\"],);
+global.options_array[++i] = create_option(i+1,	"PassCom",							spr_passcom,			["retextures\\passcom\\"],);
 global.options_array[++i] = create_option(i+1,	"MC Armory",						spr_mc_armory,			["_Optifine options\\mc armory\\"], true);
 global.options_array[++i] = create_option(i+1,	"Rubies",							spr_rubies,				["retextures\\rubies\\"],);
 global.options_array[++i] = create_option(i+1,	"Wooden Buckets",					spr_wooden_bucket,		["retextures\\wooden buckets\\"],);
